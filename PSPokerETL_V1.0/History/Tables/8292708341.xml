@@ -1,0 +1,3004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session sessioncode="8292708341">
+ <general>
+  <client_version>24.7.1.17</client_version>
+  <mode>real</mode>
+  <gametype>Holdem NL €0.01/€0.02</gametype>
+  <tablename>Alcantud, 817746916</tablename>
+  <tablecurrency>EUR</tablecurrency>
+  <smallblind>€0.01</smallblind>
+  <bigblind>€0.02</bigblind>
+  <duration>01:09:40</duration>
+  <gamecount>73</gamecount>
+  <startdate>2025-02-23 08:24:14</startdate>
+  <currency>GBP</currency>
+  <nickname>cnuapkr</nickname>
+  <bets>€7.44</bets>
+  <wins>€6.67</wins>
+  <chipsin>€1.80</chipsin>
+  <chipsout>€1.93</chipsout>
+  <statuspoints>0.00</statuspoints>
+  <awardpoints>0.00</awardpoints>
+  <ipoints>0.00</ipoints>
+  <tablesize>6</tablesize>
+ </general>
+ <game gamecode="11288369210">
+  <general>
+   <startdate>2025-02-23 08:24:14</startdate>
+   <players>
+    <player bet="€0.05" win="€0" chips="€2.50" dealer="0" seat="1" name="Player 1"/>
+    <player bet="€0.20" win="€0" chips="€0.86" dealer="0" seat="3" name="Player 3"/>
+    <player bet="€0.05" win="€0" chips="€1.65" dealer="0" seat="5" name="Player 5"/>
+    <player bet="€0.71" win="€0.48" chips="€3.77" dealer="1" seat="8" name="Player 8" rakeamount="€0.03"/>
+    <player bet="€0.01" win="€0" chips="€3.96" dealer="0" seat="10" name="Player 10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Player 10" sum="€0.01" no="1" type="1"/>
+   <action player="Player 1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Player 3" type="Pocket">X X</cards>
+   <action player="Player 3" sum="€0.05" no="3" type="23"/>
+   <cards player="Player 5" type="Pocket">X X</cards>
+   <action player="Player 5" sum="€0.05" no="4" type="3"/>
+   <cards player="Player 8" type="Pocket">X X</cards>
+   <action player="Player 8" sum="€0.05" no="5" type="3"/>
+   <cards player="Player 10" type="Pocket">X X</cards>
+   <action player="Player 10" sum="€0" no="6" type="0"/>
+   <cards player="Player 1" type="Pocket">X X</cards>
+   <action player="Player 1" sum="€0.03" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H6 HJ C5</cards>
+   <action player="Player 1" sum="€0" no="8" type="4"/>
+   <action player="Player 3" sum="€0.15" no="9" type="5"/>
+   <action player="Player 5" sum="€0" no="10" type="0"/>
+   <action player="Player 8" sum="€0.15" no="11" type="3"/>
+   <action player="Player 1" sum="€0" no="12" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SK</cards>
+   <action player="Player 3" sum="€0" no="13" type="4"/>
+   <action player="Player 8" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">S4</cards>
+   <action player="Player 3" sum="€0" no="15" type="4"/>
+   <action player="Player 8" sum="€0.51" no="16" type="5"/>
+   <action player="Player 3" sum="€0" no="17" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288371302">
+  <general>
+   <startdate>2025-02-23 08:25:14</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.45" dealer="0" seat="1" name="Player 1"/>
+    <player bet="€0.02" win="€0.06" chips="€0.66" dealer="0" seat="3" name="Player 3"/>
+    <player bet="€0.02" win="€0" chips="€1.60" dealer="0" seat="5" name="Player 5"/>
+    <player bet="€0" win="€0" chips="€4.05" dealer="0" seat="8" name="Player 8"/>
+    <player bet="€0" win="€0" chips="€3.95" dealer="1" seat="10" name="Player 10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Player 1" sum="€0.01" no="1" type="1"/>
+   <action player="Player 3" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Player 5" type="Pocket">C2 D8</cards>
+   <action player="Player 5" sum="€0.02" no="3" type="3"/>
+   <cards player="Player 8" type="Pocket">X X</cards>
+   <action player="Player 8" sum="€0" no="4" type="0"/>
+   <cards player="Player 10" type="Pocket">X X</cards>
+   <action player="Player 10" sum="€0" no="5" type="0"/>
+   <cards player="Player 1" type="Pocket">H7 C10</cards>
+   <action player="Player 1" sum="€0.01" no="6" type="3"/>
+   <cards player="Player 3" type="Pocket">SK S7</cards>
+   <action player="Player 3" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 CA S3</cards>
+   <action player="Player 1" sum="€0" no="8" type="4"/>
+   <action player="Player 3" sum="€0" no="9" type="4"/>
+   <action player="Player 5" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HQ</cards>
+   <action player="Player 1" sum="€0" no="11" type="4"/>
+   <action player="Player 3" sum="€0" no="12" type="4"/>
+   <action player="Player 5" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">CJ</cards>
+   <action player="Player 1" sum="€0" no="14" type="4"/>
+   <action player="Player 3" sum="€0" no="15" type="4"/>
+   <action player="Player 5" sum="€0" no="16" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288371467">
+  <general>
+   <startdate>2025-02-23 08:25:52</startdate>
+   <players>
+    <player bet="€0.22" win="€0" chips="€2.43" dealer="1" seat="1" name="Player 1"/>
+    <player bet="€0.65" win="€0.62" chips="€0.70" dealer="0" seat="3" name="Player 3" rakeamount="€0.04"/>
+    <player bet="€0.22" win="€0" chips="€1.58" dealer="0" seat="5" name="Player 5"/>
+    <player bet="€0" win="€0" chips="€4.05" dealer="0" seat="8" name="Player 8"/>
+    <player bet="€0" win="€0" chips="€3.95" dealer="0" seat="10" name="Player 10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Player 3" sum="€0.01" no="1" type="1"/>
+   <action player="Player 5" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Player 8" type="Pocket">X X</cards>
+   <action player="Player 8" sum="€0" no="3" type="0"/>
+   <cards player="Player 10" type="Pocket">X X</cards>
+   <action player="Player 10" sum="€0" no="4" type="0"/>
+   <cards player="Player 1" type="Pocket">X X</cards>
+   <action player="Player 1" sum="€0.05" no="5" type="23"/>
+   <cards player="Player 3" type="Pocket">X X</cards>
+   <action player="Player 3" sum="€0.22" no="6" type="23"/>
+   <cards player="Player 5" type="Pocket">X X</cards>
+   <action player="Player 5" sum="€0.20" no="7" type="3"/>
+   <action player="Player 1" sum="€0.17" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D9 D4 H7</cards>
+   <action player="Player 3" sum="€0" no="9" type="4"/>
+   <action player="Player 5" sum="€0" no="10" type="4"/>
+   <action player="Player 1" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">CA</cards>
+   <action player="Player 3" sum="€0.43" no="12" type="5"/>
+   <action player="Player 5" sum="€0" no="13" type="0"/>
+   <action player="Player 1" sum="€0" no="14" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288372487">
+  <general>
+   <startdate>2025-02-23 08:26:43</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.21" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.06" win="€0" chips="€1.10" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.06" win="€0" chips="€1.36" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.20" win="€0" chips="€2" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.20" win="€0.49" chips="€4.05" dealer="0" seat="8" name="Deuteronomi0" rakeamount="€0.03"/>
+    <player bet="€0" win="€0" chips="€3.95" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Creativebrook25" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Deuteronomi0" type="Pocket">C10 SJ</cards>
+   <action player="Deuteronomi0" sum="€0.06" no="3" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.06" no="6" type="3"/>
+   <cards player="Creativebrook25" type="Pocket">X X</cards>
+   <action player="Creativebrook25" sum="€0.05" no="7" type="3"/>
+   <cards player="cnuapkr" type="Pocket">H3 DQ</cards>
+   <action player="cnuapkr" sum="€0.04" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D10 C3 HK</cards>
+   <action player="Creativebrook25" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+   <action player="Deuteronomi0" sum="€0.12" no="11" type="5"/>
+   <action player="almian1" sum="€0" no="12" type="0"/>
+   <action player="Creativebrook25" sum="€0" no="13" type="0"/>
+   <action player="cnuapkr" sum="€0.12" no="14" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D7</cards>
+   <action player="cnuapkr" sum="€0" no="15" type="4"/>
+   <action player="Deuteronomi0" sum="€0" no="16" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">CK</cards>
+   <action player="cnuapkr" sum="€0.02" no="17" type="5"/>
+   <action player="Deuteronomi0" sum="€0.02" no="18" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288373035">
+  <general>
+   <startdate>2025-02-23 08:27:40</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.21" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.04" win="€0.06" chips="€1.30" dealer="1" seat="5" name="Creativebrook25"/>
+    <player bet="€0.04" win="€0" chips="€1.80" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.04" win="€0.06" chips="€4.34" dealer="0" seat="8" name="Deuteronomi0"/>
+    <player bet="€0" win="€0" chips="€3.95" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Deuteronomi0" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">DA C2</cards>
+   <action player="Creativebrook25" sum="€0.02" no="6" type="3"/>
+   <cards player="cnuapkr" type="Pocket">H8 D3</cards>
+   <action player="cnuapkr" sum="€0.01" no="7" type="3"/>
+   <cards player="Deuteronomi0" type="Pocket">H3 SA</cards>
+   <action player="Deuteronomi0" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CJ H9 DQ</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="Deuteronomi0" sum="€0" no="10" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C5</cards>
+   <action player="cnuapkr" sum="€0" no="12" type="4"/>
+   <action player="Deuteronomi0" sum="€0" no="13" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D6</cards>
+   <action player="cnuapkr" sum="€0.02" no="15" type="5"/>
+   <action player="Deuteronomi0" sum="€0.02" no="16" type="3"/>
+   <action player="Creativebrook25" sum="€0.02" no="17" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288373310">
+  <general>
+   <startdate>2025-02-23 08:28:41</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.21" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.07" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.07" win="€0" chips="€1.32" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.07" win="€0.23" chips="€1.76" dealer="1" seat="6" name="cnuapkr" rakeamount="€0.01"/>
+    <player bet="€0.01" win="€0" chips="€4.36" dealer="0" seat="8" name="Deuteronomi0"/>
+    <player bet="€0.02" win="€0" chips="€3.95" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Deuteronomi0" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">D6 S6</cards>
+   <action player="almian1" sum="€0.05" no="4" type="23"/>
+   <cards player="Creativebrook25" type="Pocket">HQ H3</cards>
+   <action player="Creativebrook25" sum="€0.05" no="5" type="3"/>
+   <cards player="cnuapkr" type="Pocket">H10 SK</cards>
+   <action player="cnuapkr" sum="€0.05" no="6" type="3"/>
+   <cards player="Deuteronomi0" type="Pocket">X X</cards>
+   <action player="Deuteronomi0" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CA SA D4</cards>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DK</cards>
+   <action player="almian1" sum="€0" no="12" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="13" type="4"/>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">S3</cards>
+   <action player="almian1" sum="€0" no="15" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="16" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="17" type="5"/>
+   <action player="almian1" sum="€0.02" no="18" type="3"/>
+   <action player="Creativebrook25" sum="€0.02" no="19" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288374780">
+  <general>
+   <startdate>2025-02-23 08:29:49</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.21" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€0.97" dealer="0" seat="3" name="almian1"/>
+    <player bet="€1.25" win="€2.40" chips="€1.25" dealer="0" seat="5" name="Creativebrook25" rakeamount="€0.17"/>
+    <player bet="€1.25" win="€0" chips="€1.92" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€3.93" dealer="0" seat="10" name="deeok"/>
+    <player bet="€0.04" win="€0" chips="€4.35" dealer="1" seat="8" name="Deuteronomi0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="Jekkoo" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">C7 H7</cards>
+   <action player="Creativebrook25" sum="€0.04" no="4" type="23"/>
+   <cards player="cnuapkr" type="Pocket">DJ CJ</cards>
+   <action player="cnuapkr" sum="€0.04" no="5" type="3"/>
+   <cards player="Deuteronomi0" type="Pocket">X X</cards>
+   <action player="Deuteronomi0" sum="€0.04" no="6" type="3"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SK C4 D7</cards>
+   <action player="Creativebrook25" sum="€0.56" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0.56" no="10" type="3"/>
+   <action player="Deuteronomi0" sum="€0" no="11" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H6</cards>
+   <action player="Creativebrook25" sum="€0.64" no="12" type="5"/>
+   <action player="cnuapkr" sum="€0.64" no="13" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">HQ</cards>
+   <action player="Creativebrook25" sum="€0.01" no="14" type="7"/>
+   <action player="cnuapkr" sum="€0.01" no="15" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288375454">
+  <general>
+   <startdate>2025-02-23 08:30:56</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.19" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.06" win="€0.19" chips="€0.97" dealer="0" seat="3" name="almian1" rakeamount="€0.01"/>
+    <player bet="€0.06" win="€0" chips="€2.40" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.06" win="€0" chips="€0.67" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€3.92" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Jekkoo" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Creativebrook25" type="Pocket">D7 C6</cards>
+   <action player="Creativebrook25" sum="€0.02" no="3" type="3"/>
+   <cards player="cnuapkr" type="Pocket">CQ H3</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0.01" no="6" type="3"/>
+   <cards player="almian1" type="Pocket">S9 SQ</cards>
+   <action player="almian1" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H4 SA D6</cards>
+   <action player="Jekkoo" sum="€0" no="8" type="4"/>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+   <action player="Creativebrook25" sum="€0.02" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="11" type="3"/>
+   <action player="Jekkoo" sum="€0" no="12" type="0"/>
+   <action player="almian1" sum="€0.02" no="13" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DQ</cards>
+   <action player="almian1" sum="€0" no="14" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="15" type="4"/>
+   <action player="cnuapkr" sum="€0" no="16" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C5</cards>
+   <action player="almian1" sum="€0" no="17" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="18" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="19" type="5"/>
+   <action player="almian1" sum="€0.02" no="20" type="3"/>
+   <action player="Creativebrook25" sum="€0.02" no="21" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288375828">
+  <general>
+   <startdate>2025-02-23 08:31:57</startdate>
+   <players>
+    <player bet="€0.06" win="€0" chips="€2.17" dealer="1" seat="1" name="Jekkoo"/>
+    <player bet="€0.01" win="€0" chips="€1.10" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.42" win="€0.13" chips="€2.34" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0" win="€0" chips="€0.61" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€3.92" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="Creativebrook25" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">C3 H9</cards>
+   <action player="cnuapkr" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0.06" no="5" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">X X</cards>
+   <action player="Creativebrook25" sum="€0.04" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H8 D9 D3</cards>
+   <action player="Creativebrook25" sum="€0.36" no="8" type="5"/>
+   <action player="Jekkoo" sum="€0" no="9" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288376093">
+  <general>
+   <startdate>2025-02-23 08:32:32</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.11" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€1.09" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.06" win="€0" chips="€2.41" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.06" win="€0.12" chips="€0.61" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€3.92" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Creativebrook25" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">H5 H9</cards>
+   <action player="Creativebrook25" sum="€0.04" no="6" type="23"/>
+   <cards player="cnuapkr" type="Pocket">D2 S10</cards>
+   <action player="cnuapkr" sum="€0.02" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DK CJ CA</cards>
+   <action player="Creativebrook25" sum="€0" no="8" type="4"/>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C2</cards>
+   <action player="Creativebrook25" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D7</cards>
+   <action player="Creativebrook25" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="13" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="14" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288376252">
+  <general>
+   <startdate>2025-02-23 08:33:03</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.11" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€1.09" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.08" win="€0" chips="€2.35" dealer="1" seat="5" name="Creativebrook25"/>
+    <player bet="€0.08" win="€0" chips="€0.67" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.08" win="€0.23" chips="€2" dealer="0" seat="8" name="Bredandbiher" rakeamount="€0.01"/>
+    <player bet="€0" win="€0" chips="€3.92" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">D8 DQ</cards>
+   <action player="Creativebrook25" sum="€0.02" no="6" type="3"/>
+   <cards player="cnuapkr" type="Pocket">C6 D6</cards>
+   <action player="cnuapkr" sum="€0.01" no="7" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">HA S2</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DA C10 HQ</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="Bredandbiher" sum="€0" no="10" type="4"/>
+   <action player="Creativebrook25" sum="€0.02" no="11" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="12" type="3"/>
+   <action player="Bredandbiher" sum="€0.02" no="13" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C5</cards>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+   <action player="Bredandbiher" sum="€0" no="15" type="4"/>
+   <action player="Creativebrook25" sum="€0.02" no="16" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="17" type="3"/>
+   <action player="Bredandbiher" sum="€0.02" no="18" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">DK</cards>
+   <action player="cnuapkr" sum="€0.02" no="19" type="5"/>
+   <action player="Bredandbiher" sum="€0.02" no="20" type="3"/>
+   <action player="Creativebrook25" sum="€0.02" no="21" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288377469">
+  <general>
+   <startdate>2025-02-23 08:34:03</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.11" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€1.09" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.80" win="€0.13" chips="€2.27" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.04" win="€0" chips="€0.59" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.15" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.04" win="€0" chips="€3.92" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">X X</cards>
+   <action player="Creativebrook25" sum="€0.02" no="5" type="3"/>
+   <cards player="cnuapkr" type="Pocket">S8 SJ</cards>
+   <action player="cnuapkr" sum="€0.02" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C4 H3 H10</cards>
+   <action player="deeok" sum="€0.02" no="9" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="10" type="3"/>
+   <action player="cnuapkr" sum="€0.02" no="11" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H9</cards>
+   <action player="deeok" sum="€0" no="12" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="13" type="4"/>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">HA</cards>
+   <action player="deeok" sum="€0" no="15" type="4"/>
+   <action player="Creativebrook25" sum="€0.76" no="16" type="5"/>
+   <action player="cnuapkr" sum="€0" no="17" type="0"/>
+   <action player="deeok" sum="€0" no="18" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288377852">
+  <general>
+   <startdate>2025-02-23 08:35:09</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.11" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.02" win="€0" chips="€1.09" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.26" win="€0" chips="€2.36" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.26" win="€0.54" chips="€0.55" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.03"/>
+    <player bet="€0" win="€0" chips="€2.14" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.88" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="Jekkoo" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.02" no="3" type="3"/>
+   <cards player="Creativebrook25" type="Pocket">S4 HA</cards>
+   <action player="Creativebrook25" sum="€0.02" no="4" type="3"/>
+   <cards player="cnuapkr" type="Pocket">SA H7</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D6 S2 CA</cards>
+   <action player="Jekkoo" sum="€0" no="9" type="4"/>
+   <action player="almian1" sum="€0" no="10" type="4"/>
+   <action player="Creativebrook25" sum="€0.20" no="11" type="5"/>
+   <action player="cnuapkr" sum="€0.20" no="12" type="3"/>
+   <action player="Jekkoo" sum="€0" no="13" type="0"/>
+   <action player="almian1" sum="€0" no="14" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S3</cards>
+   <action player="Creativebrook25" sum="€0.02" no="15" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="16" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">D9</cards>
+   <action player="Creativebrook25" sum="€0.02" no="17" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="18" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288380110">
+  <general>
+   <startdate>2025-02-23 08:36:22</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€2.09" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.02" win="€0" chips="€1.07" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.22" win="€0" chips="€2.10" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.22" win="€0.46" chips="€0.83" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.03"/>
+    <player bet="€0" win="€0" chips="€2.14" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€3.87" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Jekkoo" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Creativebrook25" type="Pocket">SA H5</cards>
+   <action player="Creativebrook25" sum="€0.02" no="3" type="3"/>
+   <cards player="cnuapkr" type="Pocket">HJ H3</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.02" no="6" type="3"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="7" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S8 HA D3</cards>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+   <action player="Creativebrook25" sum="€0.02" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="11" type="3"/>
+   <action player="deeok" sum="€0" no="12" type="0"/>
+   <action player="almian1" sum="€0" no="13" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S4</cards>
+   <action player="Creativebrook25" sum="€0.02" no="14" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="15" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">DJ</cards>
+   <action player="Creativebrook25" sum="€0.02" no="16" type="5"/>
+   <action player="cnuapkr" sum="€0.16" no="17" type="23"/>
+   <action player="Creativebrook25" sum="€0.14" no="18" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288380808">
+  <general>
+   <startdate>2025-02-23 08:37:56</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.08" dealer="1" seat="1" name="Jekkoo"/>
+    <player bet="€0.01" win="€0" chips="€1.05" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.08" win="€0" chips="€1.88" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.08" win="€0.18" chips="€1.07" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.01"/>
+    <player bet="€0" win="€0" chips="€2.14" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.85" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="Creativebrook25" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">H8 D9</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0.02" no="6" type="3"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">C4 DJ</cards>
+   <action player="Creativebrook25" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C7 S10 D8</cards>
+   <action player="Creativebrook25" sum="€0.02" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="10" type="3"/>
+   <action player="Jekkoo" sum="€0" no="11" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H4</cards>
+   <action player="Creativebrook25" sum="€0.02" no="12" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="13" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">DA</cards>
+   <action player="Creativebrook25" sum="€0" no="14" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="15" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="16" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288381194">
+  <general>
+   <startdate>2025-02-23 08:38:48</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.06" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.08" win="€0.15" chips="€1.80" dealer="0" seat="5" name="Creativebrook25" rakeamount="€0.01"/>
+    <player bet="€0.08" win="€0" chips="€1.17" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.14" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.85" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Creativebrook25" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">S8 H7</cards>
+   <action player="Creativebrook25" sum="€0.01" no="7" type="3"/>
+   <cards player="cnuapkr" type="Pocket">C4 S6</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D2 HK S3</cards>
+   <action player="Creativebrook25" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="10" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="11" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SQ</cards>
+   <action player="Creativebrook25" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="13" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="14" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">H3</cards>
+   <action player="Creativebrook25" sum="€0" no="15" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="16" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="17" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288381485">
+  <general>
+   <startdate>2025-02-23 08:39:51</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.06" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0.05" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.31" win="€0" chips="€1.87" dealer="1" seat="5" name="Creativebrook25"/>
+    <player bet="€0.31" win="€0.65" chips="€1.09" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.04"/>
+    <player bet="€0.02" win="€0" chips="€2.14" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.85" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.05" no="5" type="23"/>
+   <cards player="Creativebrook25" type="Pocket">D3 SK</cards>
+   <action player="Creativebrook25" sum="€0.05" no="6" type="3"/>
+   <cards player="cnuapkr" type="Pocket">H7 D7</cards>
+   <action player="cnuapkr" sum="€0.04" no="7" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H6 C10 H10</cards>
+   <action player="cnuapkr" sum="€0.08" no="9" type="5"/>
+   <action player="almian1" sum="€0" no="10" type="0"/>
+   <action player="Creativebrook25" sum="€0.08" no="11" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HQ</cards>
+   <action player="cnuapkr" sum="€0.16" no="12" type="5"/>
+   <action player="Creativebrook25" sum="€0.16" no="13" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">D2</cards>
+   <action player="cnuapkr" sum="€0.02" no="14" type="5"/>
+   <action player="Creativebrook25" sum="€0.02" no="15" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288381780">
+  <general>
+   <startdate>2025-02-23 08:40:55</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.06" dealer="0" seat="1" name="Jekkoo"/>
+    <player bet="€0" win="€0" chips="€0.99" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.30" win="€0" chips="€1.56" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.02" win="€0" chips="€1.43" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.30" win="€0.60" chips="€2.12" dealer="0" seat="8" name="Bredandbiher" rakeamount="€0.04"/>
+    <player bet="€0.02" win="€0" chips="€3.85" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Jekkoo" type="Pocket">X X</cards>
+   <action player="Jekkoo" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">H3 S4</cards>
+   <action player="Creativebrook25" sum="€0.02" no="5" type="3"/>
+   <cards player="cnuapkr" type="Pocket">HJ H6</cards>
+   <action player="cnuapkr" sum="€0.02" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">C7 H7</cards>
+   <action player="Bredandbiher" sum="€0.14" no="7" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+   <action player="Creativebrook25" sum="€0.12" no="9" type="3"/>
+   <action player="cnuapkr" sum="€0" no="10" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CQ S8 S10</cards>
+   <action player="Bredandbiher" sum="€0" no="11" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="12" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SA</cards>
+   <action player="Bredandbiher" sum="€0.16" no="13" type="5"/>
+   <action player="Creativebrook25" sum="€0.16" no="14" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">C9</cards>
+   <action player="Bredandbiher" sum="€0" no="15" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="16" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288382119">
+  <general>
+   <startdate>2025-02-23 08:42:10</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€0.99" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.04" win="€0.05" chips="€1.26" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0" win="€0" chips="€1.41" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.42" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.83" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Creativebrook25" type="Pocket">X X</cards>
+   <action player="Creativebrook25" sum="€0.02" no="3" type="3"/>
+   <cards player="cnuapkr" type="Pocket">D8 S2</cards>
+   <action player="cnuapkr" sum="€0" no="4" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CQ CK H8</cards>
+   <action player="almian1" sum="€0" no="8" type="4"/>
+   <action player="Creativebrook25" sum="€0.02" no="9" type="5"/>
+   <action player="almian1" sum="€0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288382296">
+  <general>
+   <startdate>2025-02-23 08:42:49</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€0.97" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.10" win="€0.20" chips="€1.29" dealer="0" seat="5" name="Creativebrook25" rakeamount="€0.01"/>
+    <player bet="€0.10" win="€0" chips="€1.41" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.42" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.82" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="Creativebrook25" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">SA C7</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">H10 SK</cards>
+   <action player="Creativebrook25" sum="€0.04" no="7" type="23"/>
+   <action player="cnuapkr" sum="€0.02" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HK D9 C8</cards>
+   <action player="Creativebrook25" sum="€0.02" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="10" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S7</cards>
+   <action player="Creativebrook25" sum="€0.02" no="11" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="12" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">S5</cards>
+   <action player="Creativebrook25" sum="€0.02" no="13" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="14" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288383564">
+  <general>
+   <startdate>2025-02-23 08:43:30</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.96" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.28" win="€0" chips="€1.39" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.08" win="€0" chips="€1.31" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.42" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.78" win="€0.62" chips="€3.82" dealer="0" seat="10" name="deeok" rakeamount="€0.04"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Creativebrook25" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+   <action player="sde777" sum="€0.02" no="3" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.06" no="5" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">X X</cards>
+   <action player="Creativebrook25" sum="€0.05" no="8" type="3"/>
+   <cards player="cnuapkr" type="Pocket">D8 HJ</cards>
+   <action player="cnuapkr" sum="€0.04" no="9" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H10 CQ S3</cards>
+   <action player="Creativebrook25" sum="€0.02" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0.02" no="11" type="3"/>
+   <action player="deeok" sum="€0.22" no="12" type="23"/>
+   <action player="Creativebrook25" sum="€0.20" no="13" type="3"/>
+   <action player="cnuapkr" sum="€0" no="14" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D5</cards>
+   <action player="Creativebrook25" sum="€0" no="15" type="4"/>
+   <action player="deeok" sum="€0.50" no="16" type="5"/>
+   <action player="Creativebrook25" sum="€0" no="17" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288383975">
+  <general>
+   <startdate>2025-02-23 08:44:38</startdate>
+   <players>
+    <player bet="€0.06" win="€0.19" chips="€1.98" dealer="0" seat="1" name="sde777" rakeamount="€0.01"/>
+    <player bet="€0" win="€0" chips="€0.96" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.06" win="€0" chips="€1.11" dealer="1" seat="5" name="Creativebrook25"/>
+    <player bet="€0.06" win="€0" chips="€1.23" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.42" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.16" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">D10 CA</cards>
+   <action player="sde777" sum="€0.06" no="4" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">C10 D6</cards>
+   <action player="Creativebrook25" sum="€0.06" no="6" type="3"/>
+   <cards player="cnuapkr" type="Pocket">H10 S2</cards>
+   <action player="cnuapkr" sum="€0.05" no="7" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H7 SQ HK</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="sde777" sum="€0" no="10" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SK</cards>
+   <action player="cnuapkr" sum="€0" no="12" type="4"/>
+   <action player="sde777" sum="€0" no="13" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D4</cards>
+   <action player="cnuapkr" sum="€0" no="15" type="4"/>
+   <action player="sde777" sum="€0" no="16" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="17" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288385275">
+  <general>
+   <startdate>2025-02-23 08:45:40</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.11" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.96" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0" chips="€1.05" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.02" win="€0" chips="€1.17" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.40" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0.07" chips="€4.16" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">D10 H4</cards>
+   <action player="Creativebrook25" sum="€0.02" no="5" type="3"/>
+   <cards player="cnuapkr" type="Pocket">HK D4</cards>
+   <action player="cnuapkr" sum="€0.02" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">H7 H2</cards>
+   <action player="deeok" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D5 C8 CJ</cards>
+   <action player="deeok" sum="€0" no="9" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S8</cards>
+   <action player="deeok" sum="€0" no="12" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="13" type="4"/>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C2</cards>
+   <action player="deeok" sum="€0" no="15" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="16" type="4"/>
+   <action player="cnuapkr" sum="€0" no="17" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288385823">
+  <general>
+   <startdate>2025-02-23 08:47:07</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.11" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.96" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.74" win="€0" chips="€1.03" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.74" win="€1.41" chips="€1.15" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.10"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€4.21" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="Creativebrook25" type="Pocket">C7 HA</cards>
+   <action player="Creativebrook25" sum="€0.02" no="4" type="3"/>
+   <cards player="cnuapkr" type="Pocket">SA HQ</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D7 DA S10</cards>
+   <action player="sde777" sum="€0" no="9" type="4"/>
+   <action player="Creativebrook25" sum="€0.20" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0.20" no="11" type="3"/>
+   <action player="sde777" sum="€0" no="12" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SQ</cards>
+   <action player="Creativebrook25" sum="€0.26" no="13" type="5"/>
+   <action player="cnuapkr" sum="€0.26" no="14" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">C5</cards>
+   <action player="Creativebrook25" sum="€0.26" no="15" type="5"/>
+   <action player="cnuapkr" sum="€0.26" no="16" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288388393">
+  <general>
+   <startdate>2025-02-23 08:48:18</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€2.09" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.43" win="€0.56" chips="€0.96" dealer="0" seat="3" cashout_fee="€0" name="almian1" cashout="1"/>
+    <player bet="€0.29" win="€0" chips="€0.29" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0.14" win="€0" chips="€1.82" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.20" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Creativebrook25" type="Pocket">D7 HJ</cards>
+   <action player="Creativebrook25" sum="€0.02" no="3" type="3"/>
+   <cards player="cnuapkr" type="Pocket">D2 D6</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="7" type="0"/>
+   <cards player="almian1" type="Pocket">DJ C8</cards>
+   <action player="almian1" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S4 C6 CJ</cards>
+   <action player="almian1" sum="€0.04" no="9" type="5"/>
+   <action player="Creativebrook25" sum="€0.12" no="10" type="23"/>
+   <action player="cnuapkr" sum="€0.12" no="11" type="3"/>
+   <action player="almian1" sum="€0.41" no="12" type="23"/>
+   <action player="Creativebrook25" sum="€0.15" no="13" type="7"/>
+   <action player="cnuapkr" sum="€0" no="14" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C9</cards>
+  </round>
+  <round no="4">
+   <cards type="River">CA</cards>
+  </round>
+ </game>
+ <game gamecode="11288389118">
+  <general>
+   <startdate>2025-02-23 08:49:24</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.08" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.01" win="€0" chips="€1.23" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0.02" chips="€1.68" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.20" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">HQ S9</cards>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288389221">
+  <general>
+   <startdate>2025-02-23 08:49:47</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.08" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.66" win="€0" chips="€1.22" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.66" win="€1.26" chips="€1.69" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.08"/>
+    <player bet="€0.02" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.20" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">D10 HA</cards>
+   <action player="almian1" sum="€0.05" no="5" type="23"/>
+   <cards player="cnuapkr" type="Pocket">S3 C2</cards>
+   <action player="cnuapkr" sum="€0.04" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D4 DA S5</cards>
+   <action player="cnuapkr" sum="€0.08" no="8" type="5"/>
+   <action player="almian1" sum="€0.23" no="9" type="23"/>
+   <action player="cnuapkr" sum="€0.15" no="10" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SA</cards>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+   <action player="almian1" sum="€0.38" no="12" type="5"/>
+   <action player="cnuapkr" sum="€0.38" no="13" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">C9</cards>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+   <action player="almian1" sum="€0" no="15" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288389627">
+  <general>
+   <startdate>2025-02-23 08:50:46</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€2.08" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.56" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.04" win="€0.05" chips="€2.29" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.37" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€4.20" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">DK C8</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H9 DA D9</cards>
+   <action player="deeok" sum="€0" no="8" type="4"/>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">CQ</cards>
+   <action player="deeok" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D10</cards>
+   <action player="deeok" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="13" type="5"/>
+   <action player="deeok" sum="€0" no="14" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288390447">
+  <general>
+   <startdate>2025-02-23 08:52:22</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€2.08" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.56" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.32" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.06" win="€0.05" chips="€2.36" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€4.18" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H8 SQ</cards>
+   <action player="cnuapkr" sum="€0" no="4" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0.06" no="5" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288390614">
+  <general>
+   <startdate>2025-02-23 08:52:56</startdate>
+   <players>
+    <player bet="€2" win="€3.76" chips="€2.06" dealer="0" seat="1" name="sde777" rakeamount="€0.26"/>
+    <player bet="€0.02" win="€0" chips="€0.56" dealer="0" seat="3" name="almian1"/>
+    <player bet="€2" win="€0" chips="€2" dealer="0" seat="5" name="Creativebrook25"/>
+    <player bet="€0" win="€0" chips="€2.32" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.17" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+   <action player="Creativebrook25" sum="€0.02" no="3" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Creativebrook25" type="Pocket">HK S3</cards>
+   <action player="Creativebrook25" sum="€0" no="4" type="4"/>
+   <cards player="cnuapkr" type="Pocket">H4 C9</cards>
+   <action player="cnuapkr" sum="€0" no="5" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="sde777" type="Pocket">S8 CQ</cards>
+   <action player="sde777" sum="€0.01" no="8" type="3"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D6 H5 H7</cards>
+   <action player="sde777" sum="€0" no="10" type="4"/>
+   <action player="almian1" sum="€0" no="11" type="4"/>
+   <action player="Creativebrook25" sum="€0" no="12" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S4</cards>
+   <action player="sde777" sum="€0" no="13" type="4"/>
+   <action player="almian1" sum="€0" no="14" type="4"/>
+   <action player="Creativebrook25" sum="€0.72" no="15" type="5"/>
+   <action player="sde777" sum="€0.72" no="16" type="3"/>
+   <action player="almian1" sum="€0" no="17" type="0"/>
+  </round>
+  <round no="4">
+   <cards type="River">D2</cards>
+   <action player="sde777" sum="€0.75" no="18" type="5"/>
+   <action player="Creativebrook25" sum="€1.26" no="19" type="7"/>
+   <action player="sde777" sum="€0.51" no="20" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288391076">
+  <general>
+   <startdate>2025-02-23 08:54:38</startdate>
+   <players>
+    <player bet="€0.06" win="€0.13" chips="€3.82" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.01" win="€0" chips="€0.54" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.06" win="€0" chips="€2.32" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.17" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">S3 CK</cards>
+   <action player="sde777" sum="€0.02" no="5" type="3"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="cnuapkr" type="Pocket">D2 SK</cards>
+   <action player="cnuapkr" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DJ SA S7</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="4"/>
+   <action player="sde777" sum="€0.04" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0.04" no="10" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H3</cards>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+   <action player="sde777" sum="€0" no="12" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D4</cards>
+   <action player="cnuapkr" sum="€0" no="13" type="4"/>
+   <action player="sde777" sum="€0" no="14" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288395935">
+  <general>
+   <startdate>2025-02-23 08:55:34</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.89" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.05" win="€0" chips="€0.53" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.11" win="€0.12" chips="€2.26" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.39" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€4.17" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.05" no="5" type="23"/>
+   <cards player="cnuapkr" type="Pocket">DJ H4</cards>
+   <action player="cnuapkr" sum="€0.04" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HA H6 CJ</cards>
+   <action player="cnuapkr" sum="€0.06" no="8" type="5"/>
+   <action player="almian1" sum="€0" no="9" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288396147">
+  <general>
+   <startdate>2025-02-23 08:56:19</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.89" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.48" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.18" win="€0.35" chips="€2.33" dealer="1" seat="6" name="cnuapkr" rakeamount="€0.02"/>
+    <player bet="€0.01" win="€0" chips="€2.37" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.18" win="€0" chips="€4.17" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">S10 C10</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">D9 C9</cards>
+   <action player="deeok" sum="€0.10" no="7" type="23"/>
+   <action player="cnuapkr" sum="€0.08" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CJ D3 D10</cards>
+   <action player="deeok" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D6</cards>
+   <action player="deeok" sum="€0.08" no="11" type="5"/>
+   <action player="cnuapkr" sum="€0.08" no="12" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">SQ</cards>
+   <action player="deeok" sum="€0" no="13" type="4"/>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288396628">
+  <general>
+   <startdate>2025-02-23 08:57:21</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.89" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.04" win="€0" chips="€0.48" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.06" win="€0.13" chips="€2.50" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.36" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.99" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.04" no="3" type="23"/>
+   <cards player="cnuapkr" type="Pocket">DK H7</cards>
+   <action player="cnuapkr" sum="€0.04" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.02" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C8 C7 HA</cards>
+   <action player="sde777" sum="€0" no="8" type="4"/>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S4</cards>
+   <action player="sde777" sum="€0" no="11" type="4"/>
+   <action player="almian1" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="13" type="5"/>
+   <action player="sde777" sum="€0" no="14" type="0"/>
+   <action player="almian1" sum="€0" no="15" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288398074">
+  <general>
+   <startdate>2025-02-23 08:58:46</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€3.85" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0.02" chips="€0.44" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.59" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.36" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.98" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <cards player="cnuapkr" type="Pocket">H8 C4</cards>
+   <action player="cnuapkr" sum="€0" no="3" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288398149">
+  <general>
+   <startdate>2025-02-23 08:59:03</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.84" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.05" win="€0" chips="€0.45" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0" chips="€2" dealer="0" seat="5" name="3aHocblecTb"/>
+    <player bet="€0.05" win="€0.12" chips="€2.59" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.36" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.98" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="3aHocblecTb" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">CQ SA</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+   <cards player="almian1" type="Pocket">HA H4</cards>
+   <action player="almian1" sum="€0.05" no="7" type="23"/>
+   <cards player="3aHocblecTb" type="Pocket">X X</cards>
+   <action player="3aHocblecTb" sum="€0" no="8" type="0"/>
+   <action player="cnuapkr" sum="€0.03" no="9" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CJ H10 D8</cards>
+   <action player="almian1" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SJ</cards>
+   <action player="almian1" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C5</cards>
+   <action player="almian1" sum="€0" no="14" type="4"/>
+   <action player="cnuapkr" sum="€0" no="15" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288399424">
+  <general>
+   <startdate>2025-02-23 09:00:12</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.84" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.40" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.01" win="€0" chips="€2" dealer="0" seat="5" name="3aHocblecTb"/>
+    <player bet="€0.02" win="€0.02" chips="€2.66" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.36" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.98" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="3aHocblecTb" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">C3 SQ</cards>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="3aHocblecTb" type="Pocket">X X</cards>
+   <action player="3aHocblecTb" sum="€0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288399526">
+  <general>
+   <startdate>2025-02-23 09:00:30</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.84" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.40" win="€0" chips="€0.40" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.40" win="€0.78" chips="€2" dealer="1" seat="5" name="3aHocblecTb" rakeamount="€0.05"/>
+    <player bet="€0.01" win="€0" chips="€2.67" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.36" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.98" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">SQ CQ</cards>
+   <action player="almian1" sum="€0.05" no="5" type="23"/>
+   <cards player="3aHocblecTb" type="Pocket">CA HA</cards>
+   <action player="3aHocblecTb" sum="€0.18" no="6" type="23"/>
+   <cards player="cnuapkr" type="Pocket">D4 C6</cards>
+   <action player="cnuapkr" sum="€0" no="7" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+   <action player="almian1" sum="€0.40" no="9" type="23"/>
+   <action player="3aHocblecTb" sum="€0.22" no="10" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H7 D10 D7</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">H4</cards>
+  </round>
+  <round no="4">
+   <cards type="River">CJ</cards>
+  </round>
+ </game>
+ <game gamecode="11288399803">
+  <general>
+   <startdate>2025-02-23 09:01:23</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.84" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€2.38" dealer="0" seat="5" name="3aHocblecTb"/>
+    <player bet="€0.08" win="€0.05" chips="€2.66" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.34" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€3.98" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="3aHocblecTb" type="Pocket">X X</cards>
+   <action player="3aHocblecTb" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">HQ H6</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H4 C4 S10</cards>
+   <action player="deeok" sum="€0" no="8" type="4"/>
+   <action player="cnuapkr" sum="€0.06" no="9" type="5"/>
+   <action player="deeok" sum="€0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288400093">
+  <general>
+   <startdate>2025-02-23 09:02:22</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€3.84" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0.05" chips="€0.80" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0" win="€0" chips="€2.38" dealer="0" seat="5" name="3aHocblecTb"/>
+    <player bet="€0" win="€0" chips="€2.69" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.96" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+   <action player="husky0077" sum="€0.02" no="3" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="husky0077" type="Pocket">C4 SK</cards>
+   <action player="husky0077" sum="€0" no="4" type="4"/>
+   <cards player="3aHocblecTb" type="Pocket">X X</cards>
+   <action player="3aHocblecTb" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H3 D10</cards>
+   <action player="cnuapkr" sum="€0" no="6" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+   <cards player="sde777" type="Pocket">C6 CA</cards>
+   <action player="sde777" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HJ H5 C5</cards>
+   <action player="sde777" sum="€0" no="10" type="4"/>
+   <action player="husky0077" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S2</cards>
+   <action player="sde777" sum="€0" no="12" type="4"/>
+   <action player="husky0077" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">H4</cards>
+   <action player="sde777" sum="€0" no="14" type="4"/>
+   <action player="husky0077" sum="€0" no="15" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288400367">
+  <general>
+   <startdate>2025-02-23 09:03:18</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€3.82" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0" chips="€0.83" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0" win="€0" chips="€2.38" dealer="0" seat="5" name="3aHocblecTb"/>
+    <player bet="€0.08" win="€0.06" chips="€2.69" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.95" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="husky0077" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="3aHocblecTb" type="Pocket">X X</cards>
+   <action player="3aHocblecTb" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H9 C9</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.01" no="7" type="3"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SA H8 H5</cards>
+   <action player="sde777" sum="€0" no="9" type="4"/>
+   <action player="husky0077" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0.06" no="11" type="5"/>
+   <action player="sde777" sum="€0" no="12" type="0"/>
+   <action player="husky0077" sum="€0" no="13" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288400904">
+  <general>
+   <startdate>2025-02-23 09:04:17</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.80" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.06" win="€0" chips="€0.81" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0.59" win="€0.58" chips="€2.73" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.04"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.28" win="€0" chips="€3.95" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="husky0077" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.06" no="4" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="5" type="0"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0.05" no="6" type="3"/>
+   <cards player="cnuapkr" type="Pocket">HA H8</cards>
+   <action player="cnuapkr" sum="€0.04" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 H2 D4</cards>
+   <action player="husky0077" sum="€0" no="8" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="9" type="5"/>
+   <action player="deeok" sum="€0.10" no="10" type="23"/>
+   <action player="husky0077" sum="€0" no="11" type="0"/>
+   <action player="cnuapkr" sum="€0.08" no="12" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H9</cards>
+   <action player="cnuapkr" sum="€0" no="13" type="4"/>
+   <action player="deeok" sum="€0.12" no="14" type="5"/>
+   <action player="cnuapkr" sum="€0.12" no="15" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">D6</cards>
+   <action player="cnuapkr" sum="€0.31" no="16" type="5"/>
+   <action player="deeok" sum="€0" no="17" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288402548">
+  <general>
+   <startdate>2025-02-23 09:05:28</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.80" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.75" dealer="1" seat="3" name="husky0077"/>
+    <player bet="€0.06" win="€0" chips="€3.03" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.12" win="€0.14" chips="€3.67" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.06" no="3" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">CQ DA</cards>
+   <action player="cnuapkr" sum="€0.05" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SK S5 S9</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="4"/>
+   <action player="deeok" sum="€0.06" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288403662">
+  <general>
+   <startdate>2025-02-23 09:06:09</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.80" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.75" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0.04" win="€0" chips="€2.97" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.31" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.24" win="€0.09" chips="€3.75" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">D3 H7</cards>
+   <action player="cnuapkr" sum="€0.04" no="5" type="23"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.24" no="7" type="23"/>
+   <action player="cnuapkr" sum="€0" no="8" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288404112">
+  <general>
+   <startdate>2025-02-23 09:06:45</startdate>
+   <players>
+    <player bet="€0.02" win="€0.02" chips="€3.80" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.75" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0" win="€0" chips="€2.93" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.30" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.80" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H7 D2</cards>
+   <action player="cnuapkr" sum="€0" no="4" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288406466">
+  <general>
+   <startdate>2025-02-23 09:07:10</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€3.81" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.06" win="€0.13" chips="€0.75" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0" win="€0" chips="€2.93" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.30" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.06" win="€0" chips="€3.79" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="husky0077" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">S8 C3</cards>
+   <action player="cnuapkr" sum="€0" no="3" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">D5 H5</cards>
+   <action player="deeok" sum="€0.06" no="5" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+   <cards player="husky0077" type="Pocket">CJ S10</cards>
+   <action player="husky0077" sum="€0.04" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S4 DQ DA</cards>
+   <action player="husky0077" sum="€0" no="8" type="4"/>
+   <action player="deeok" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D2</cards>
+   <action player="husky0077" sum="€0" no="10" type="4"/>
+   <action player="deeok" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C10</cards>
+   <action player="husky0077" sum="€0" no="12" type="4"/>
+   <action player="deeok" sum="€0" no="13" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288407808">
+  <general>
+   <startdate>2025-02-23 09:07:54</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.80" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0" chips="€0.82" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0.06" win="€0.14" chips="€2" dealer="0" seat="5" name="kvmvz"/>
+    <player bet="€0.06" win="€0" chips="€2.93" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.30" dealer="0" seat="8" name="Bredandbiher"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="husky0077" sum="€0.01" no="1" type="1"/>
+   <action player="kvmvz" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">H5 DK</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="5" type="0"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0.01" no="6" type="3"/>
+   <cards player="kvmvz" type="Pocket">C2 DQ</cards>
+   <action player="kvmvz" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H6 HK H10</cards>
+   <action player="husky0077" sum="€0" no="8" type="4"/>
+   <action player="kvmvz" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SQ</cards>
+   <action player="husky0077" sum="€0" no="11" type="4"/>
+   <action player="kvmvz" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">CQ</cards>
+   <action player="husky0077" sum="€0" no="14" type="4"/>
+   <action player="kvmvz" sum="€0.04" no="15" type="5"/>
+   <action player="cnuapkr" sum="€0.04" no="16" type="3"/>
+   <action player="husky0077" sum="€0" no="17" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288408514">
+  <general>
+   <startdate>2025-02-23 09:09:55</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.80" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.04" win="€0.13" chips="€0.80" dealer="1" seat="3" name="husky0077"/>
+    <player bet="€0.01" win="€0" chips="€2.08" dealer="0" seat="5" name="kvmvz"/>
+    <player bet="€0.04" win="€0" chips="€2.87" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.30" dealer="0" seat="8" name="Bredandbiher"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="kvmvz" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">H3 D3</cards>
+   <action player="sde777" sum="€0.04" no="4" type="23"/>
+   <cards player="husky0077" type="Pocket">CJ HA</cards>
+   <action player="husky0077" sum="€0.04" no="5" type="3"/>
+   <cards player="kvmvz" type="Pocket">X X</cards>
+   <action player="kvmvz" sum="€0" no="6" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H9 SJ</cards>
+   <action player="cnuapkr" sum="€0.02" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D10 S4 H6</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="4"/>
+   <action player="sde777" sum="€0" no="9" type="4"/>
+   <action player="husky0077" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SA</cards>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+   <action player="sde777" sum="€0" no="12" type="4"/>
+   <action player="husky0077" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D8</cards>
+   <action player="cnuapkr" sum="€0" no="14" type="4"/>
+   <action player="sde777" sum="€0" no="15" type="4"/>
+   <action player="husky0077" sum="€0" no="16" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288409852">
+  <general>
+   <startdate>2025-02-23 09:11:07</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.76" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€0.89" dealer="0" seat="3" name="husky0077"/>
+    <player bet="€0" win="€0" chips="€2.07" dealer="1" seat="5" name="kvmvz"/>
+    <player bet="€0.02" win="€0.04" chips="€2.83" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.30" dealer="0" seat="8" name="Bredandbiher"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="4" type="0"/>
+   <cards player="kvmvz" type="Pocket">X X</cards>
+   <action player="kvmvz" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">DQ CA</cards>
+   <action player="cnuapkr" sum="€0.01" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">CJ S6</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S3 H6 D9</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="4"/>
+   <action player="Bredandbiher" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SA</cards>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+   <action player="Bredandbiher" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">H4</cards>
+   <action player="cnuapkr" sum="€0" no="12" type="4"/>
+   <action player="Bredandbiher" sum="€0" no="13" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288410205">
+  <general>
+   <startdate>2025-02-23 09:12:17</startdate>
+   <players>
+    <player bet="€0.02" win="€0.05" chips="€3.76" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€2.07" dealer="0" seat="5" name="kvmvz"/>
+    <player bet="€0.02" win="€0" chips="€2.85" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.28" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€0.89" dealer="0" seat="3" name="husky0077"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="husky0077" type="Pocket">X X</cards>
+   <action player="husky0077" sum="€0" no="3" type="0"/>
+   <cards player="kvmvz" type="Pocket">X X</cards>
+   <action player="kvmvz" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">S2 C6</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">D10 HQ</cards>
+   <action player="sde777" sum="€0" no="7" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C8 SK HA</cards>
+   <action player="sde777" sum="€0" no="8" type="4"/>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C4</cards>
+   <action player="sde777" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">D8</cards>
+   <action player="sde777" sum="€0" no="12" type="4"/>
+   <action player="cnuapkr" sum="€0" no="13" type="4"/>
+  </round>
+ </game>
+ <game gamecode="11288410619">
+  <general>
+   <startdate>2025-02-23 09:13:37</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.79" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.16" win="€0.10" chips="€0.80" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0" chips="€2.83" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.27" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€2.07" dealer="0" seat="5" name="kvmvz"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="kvmvz" type="Pocket">X X</cards>
+   <action player="kvmvz" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">D4 D9</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.04" no="6" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.16" no="7" type="23"/>
+   <action player="cnuapkr" sum="€0" no="8" type="0"/>
+   <action player="sde777" sum="€0" no="9" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288412714">
+  <general>
+   <startdate>2025-02-23 09:14:31</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.75" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.39" win="€0.32" chips="€0.86" dealer="0" seat="3" name="almian1" rakeamount="€0.02"/>
+    <player bet="€0.02" win="€0" chips="€2" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.14" win="€0" chips="€2.81" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.27" dealer="0" seat="8" name="Bredandbiher"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="BuboTN" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">H2 CA</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.04" no="5" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.03" no="6" type="3"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="7" type="0"/>
+   <action player="cnuapkr" sum="€0.02" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SJ S2 H4</cards>
+   <action player="almian1" sum="€0.10" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0.10" no="10" type="3"/>
+   <action player="sde777" sum="€0" no="11" type="0"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C3</cards>
+   <action player="almian1" sum="€0.25" no="12" type="5"/>
+   <action player="cnuapkr" sum="€0" no="13" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288413313">
+  <general>
+   <startdate>2025-02-23 09:15:42</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.34" win="€0.23" chips="€2" dealer="0" seat="5" name="BuboTN" rakeamount="€0.01"/>
+    <player bet="€0.12" win="€0" chips="€2.67" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.27" dealer="0" seat="8" name="Bredandbiher"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="BuboTN" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0.06" no="6" type="23"/>
+   <cards player="cnuapkr" type="Pocket">D5 C2</cards>
+   <action player="cnuapkr" sum="€0.04" no="7" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H10 SQ D3</cards>
+   <action player="BuboTN" sum="€0.06" no="8" type="5"/>
+   <action player="cnuapkr" sum="€0.06" no="9" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DA</cards>
+   <action player="BuboTN" sum="€0" no="10" type="4"/>
+   <action player="cnuapkr" sum="€0" no="11" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">H5</cards>
+   <action player="BuboTN" sum="€0.22" no="12" type="5"/>
+   <action player="cnuapkr" sum="€0" no="13" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288415162">
+  <general>
+   <startdate>2025-02-23 09:16:46</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.11" dealer="1" seat="5" name="BuboTN"/>
+    <player bet="€0.08" win="€0" chips="€2.55" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.19" win="€0.15" chips="€2.27" dealer="0" seat="8" name="Bredandbiher" rakeamount="€0.01"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H10 DA</cards>
+   <action player="cnuapkr" sum="€0.01" no="6" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0.08" no="7" type="23"/>
+   <action player="cnuapkr" sum="€0.06" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C5 D7 C9</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="Bredandbiher" sum="€0.11" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288419053">
+  <general>
+   <startdate>2025-02-23 09:17:36</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.11" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.06" win="€0.05" chips="€2.47" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.34" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€3.73" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H7 S7</cards>
+   <action player="cnuapkr" sum="€0.06" no="6" type="23"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288419275">
+  <general>
+   <startdate>2025-02-23 09:18:20</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.13" win="€0.13" chips="€2.11" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.05" win="€0" chips="€2.50" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.71" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0.05" no="4" type="23"/>
+   <cards player="cnuapkr" type="Pocket">CQ DJ</cards>
+   <action player="cnuapkr" sum="€0.05" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D2 C8 CK</cards>
+   <action player="BuboTN" sum="€0.08" no="9" type="5"/>
+   <action player="cnuapkr" sum="€0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288420526">
+  <general>
+   <startdate>2025-02-23 09:19:03</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€3.69" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0.02" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.19" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.45" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.70" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">D9 SJ</cards>
+   <action player="cnuapkr" sum="€0" no="4" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288420800">
+  <general>
+   <startdate>2025-02-23 09:19:32</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.68" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.01" win="€0" chips="€1.05" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0.02" chips="€2.19" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.45" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.70" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="BuboTN" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <cards player="cnuapkr" type="Pocket">C9 S5</cards>
+   <action player="cnuapkr" sum="€0" no="3" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288420938">
+  <general>
+   <startdate>2025-02-23 09:19:57</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.68" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.12" win="€0.11" chips="€1.04" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.01" win="€0" chips="€2.20" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.05" win="€0" chips="€2.45" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.70" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="BuboTN" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="5" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.05" no="6" type="23"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="7" type="0"/>
+   <cards player="cnuapkr" type="Pocket">SK C5</cards>
+   <action player="cnuapkr" sum="€0.03" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HJ C4 H4</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="almian1" sum="€0.07" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288422955">
+  <general>
+   <startdate>2025-02-23 09:20:43</startdate>
+   <players>
+    <player bet="€0.04" win="€0.05" chips="€3.68" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.10" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.19" dealer="1" seat="5" name="BuboTN"/>
+    <player bet="€0.01" win="€0" chips="€2.40" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.70" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.04" no="4" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="6" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H6 D5</cards>
+   <action player="cnuapkr" sum="€0" no="7" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288423090">
+  <general>
+   <startdate>2025-02-23 09:21:10</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.10" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.19" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.06" win="€0.04" chips="€2.31" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€3.70" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H3 C4</cards>
+   <action player="cnuapkr" sum="€0" no="6" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0.06" no="7" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288424147">
+  <general>
+   <startdate>2025-02-23 09:21:50</startdate>
+   <players>
+    <player bet="€0.02" win="€0.02" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.10" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.19" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.68" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">HJ S2</cards>
+   <action player="cnuapkr" sum="€0" no="5" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288425293">
+  <general>
+   <startdate>2025-02-23 09:22:23</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€3.72" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.10" win="€0" chips="€1.10" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.25" win="€0.20" chips="€2.19" dealer="0" seat="5" name="BuboTN" rakeamount="€0.01"/>
+    <player bet="€0" win="€0" chips="€2.39" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.67" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="BuboTN" type="Pocket">DK X</cards>
+   <action player="BuboTN" sum="€0.04" no="3" type="23"/>
+   <cards player="cnuapkr" type="Pocket">C7 D4</cards>
+   <action player="cnuapkr" sum="€0" no="4" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="5" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="7" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.02" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 D9 DJ</cards>
+   <action player="almian1" sum="€0" no="9" type="4"/>
+   <action player="BuboTN" sum="€0.06" no="10" type="5"/>
+   <action player="almian1" sum="€0.06" no="11" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C3</cards>
+   <action player="almian1" sum="€0" no="12" type="4"/>
+   <action player="BuboTN" sum="€0" no="13" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C6</cards>
+   <action player="almian1" sum="€0" no="14" type="4"/>
+   <action player="BuboTN" sum="€0.15" no="15" type="5"/>
+   <action player="almian1" sum="€0" no="16" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288425821">
+  <general>
+   <startdate>2025-02-23 09:23:59</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.71" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.01" win="€0" chips="€1" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.02" win="€0" chips="€2.29" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.17" win="€0.18" chips="€2.39" dealer="0" seat="6" name="cnuapkr" rakeamount="€0.01"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.08" win="€0" chips="€3.67" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="BuboTN" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">CA H8</cards>
+   <action player="cnuapkr" sum="€0.02" no="3" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.08" no="5" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="6" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="8" type="0"/>
+   <action player="cnuapkr" sum="€0.06" no="9" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S8 S7 D4</cards>
+   <action player="cnuapkr" sum="€0.09" no="10" type="5"/>
+   <action player="deeok" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288426919">
+  <general>
+   <startdate>2025-02-23 09:25:07</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.71" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.16" win="€0.11" chips="€0.99" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.01" win="€0" chips="€2.27" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.02" win="€0" chips="€2.49" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.59" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="BuboTN" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.04" no="5" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0.16" no="6" type="23"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="7" type="0"/>
+   <cards player="cnuapkr" type="Pocket">DK C5</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="0"/>
+   <action player="sde777" sum="€0" no="9" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288428482">
+  <general>
+   <startdate>2025-02-23 09:25:48</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€3.67" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.06" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.26" dealer="1" seat="5" name="BuboTN"/>
+    <player bet="€0.06" win="€0" chips="€2.47" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.14" win="€0.14" chips="€3.59" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.06" no="3" type="23"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="4" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="6" type="0"/>
+   <cards player="cnuapkr" type="Pocket">D10 DK</cards>
+   <action player="cnuapkr" sum="€0.05" no="7" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C5 S6 H3</cards>
+   <action player="cnuapkr" sum="€0" no="9" type="4"/>
+   <action player="deeok" sum="€0.08" no="10" type="5"/>
+   <action player="cnuapkr" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288429032">
+  <general>
+   <startdate>2025-02-23 09:26:35</startdate>
+   <players>
+    <player bet="€0.06" win="€0.05" chips="€3.67" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.06" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.26" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.41" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.01" win="€0" chips="€2.31" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.02" win="€0" chips="€3.67" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.06" no="3" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">H6 CA</cards>
+   <action player="cnuapkr" sum="€0" no="6" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="7" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="8" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288429210">
+  <general>
+   <startdate>2025-02-23 09:27:05</startdate>
+   <players>
+    <player bet="€0.02" win="€0" chips="€3.70" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.06" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.26" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.04" win="€0.05" chips="€2.41" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.30" dealer="1" seat="8" name="Bredandbiher"/>
+    <player bet="€0.01" win="€0" chips="€3.65" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="deeok" sum="€0.01" no="1" type="1"/>
+   <action player="sde777" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="3" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="4" type="0"/>
+   <cards player="cnuapkr" type="Pocket">S2 S8</cards>
+   <action player="cnuapkr" sum="€0.02" no="5" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="6" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="7" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="8" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H2 CK CQ</cards>
+   <action player="sde777" sum="€0" no="9" type="4"/>
+   <action player="cnuapkr" sum="€0.02" no="10" type="5"/>
+   <action player="sde777" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288430651">
+  <general>
+   <startdate>2025-02-23 09:27:51</startdate>
+   <players>
+    <player bet="€0.01" win="€0" chips="€3.68" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0.02" win="€0" chips="€1.06" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.26" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0.02" win="€0" chips="€2.44" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.10" win="€0.07" chips="€2.30" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.64" dealer="1" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="sde777" sum="€0.01" no="1" type="1"/>
+   <action player="almian1" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="3" type="0"/>
+   <cards player="cnuapkr" type="Pocket">HA C8</cards>
+   <action player="cnuapkr" sum="€0.02" no="4" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0.10" no="5" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="6" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="7" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="8" type="0"/>
+   <action player="cnuapkr" sum="€0" no="9" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288432005">
+  <general>
+   <startdate>2025-02-23 09:28:32</startdate>
+   <players>
+    <player bet="€0.04" win="€0" chips="€3.67" dealer="1" seat="1" name="sde777"/>
+    <player bet="€0.01" win="€0" chips="€1.04" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.10" win="€0.09" chips="€2.26" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€2.42" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.35" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.64" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="almian1" sum="€0.01" no="1" type="1"/>
+   <action player="BuboTN" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="cnuapkr" type="Pocket">DA H7</cards>
+   <action player="cnuapkr" sum="€0" no="3" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="4" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="5" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.04" no="6" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="7" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0.02" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HJ DJ HQ</cards>
+   <action player="BuboTN" sum="€0" no="9" type="4"/>
+   <action player="sde777" sum="€0" no="10" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S7</cards>
+   <action player="BuboTN" sum="€0.06" no="11" type="5"/>
+   <action player="sde777" sum="€0" no="12" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288433477">
+  <general>
+   <startdate>2025-02-23 09:29:54</startdate>
+   <players>
+    <player bet="€0.26" win="€0" chips="€3.63" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.03" dealer="1" seat="3" name="almian1"/>
+    <player bet="€0.53" win="€0.51" chips="€2.31" dealer="0" seat="5" name="BuboTN" rakeamount="€0.03"/>
+    <player bet="€0.02" win="€0" chips="€2.42" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0" win="€0" chips="€2.35" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.64" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="BuboTN" sum="€0.01" no="1" type="1"/>
+   <action player="cnuapkr" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="3" type="0"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="4" type="0"/>
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0.06" no="5" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="6" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0.26" no="7" type="23"/>
+   <cards player="cnuapkr" type="Pocket">CK HA</cards>
+   <action player="cnuapkr" sum="€0" no="8" type="0"/>
+   <action player="sde777" sum="€0.20" no="9" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C6 S6 CA</cards>
+   <action player="BuboTN" sum="€0.27" no="10" type="5"/>
+   <action player="sde777" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="11288435023">
+  <general>
+   <startdate>2025-02-23 09:31:17</startdate>
+   <players>
+    <player bet="€0.47" win="€1.34" chips="€3.37" dealer="0" seat="1" name="sde777" rakeamount="€0.09"/>
+    <player bet="€0" win="€0" chips="€1.03" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0.47" win="€0" chips="€2.56" dealer="1" seat="5" name="BuboTN"/>
+    <player bet="€0.47" win="€0" chips="€2.40" dealer="0" seat="6" name="cnuapkr"/>
+    <player bet="€0.02" win="€0" chips="€2.35" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0" win="€0" chips="€3.64" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="cnuapkr" sum="€0.01" no="1" type="1"/>
+   <action player="Bredandbiher" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0" no="3" type="0"/>
+   <cards player="sde777" type="Pocket">C10 CQ</cards>
+   <action player="sde777" sum="€0.04" no="4" type="23"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="5" type="0"/>
+   <cards player="BuboTN" type="Pocket">HA CJ</cards>
+   <action player="BuboTN" sum="€0.12" no="6" type="23"/>
+   <cards player="cnuapkr" type="Pocket">D8 C8</cards>
+   <action player="cnuapkr" sum="€0.11" no="7" type="3"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0" no="8" type="0"/>
+   <action player="sde777" sum="€0.08" no="9" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SJ S3 C9</cards>
+   <action player="cnuapkr" sum="€0" no="10" type="4"/>
+   <action player="sde777" sum="€0.08" no="11" type="5"/>
+   <action player="BuboTN" sum="€0.31" no="12" type="23"/>
+   <action player="cnuapkr" sum="€0.31" no="13" type="3"/>
+   <action player="sde777" sum="€0.23" no="14" type="3"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SQ</cards>
+   <action player="cnuapkr" sum="€0.02" no="15" type="5"/>
+   <action player="sde777" sum="€0.02" no="16" type="3"/>
+   <action player="BuboTN" sum="€0.02" no="17" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">D9</cards>
+   <action player="cnuapkr" sum="€0.02" no="18" type="5"/>
+   <action player="sde777" sum="€0.02" no="19" type="3"/>
+   <action player="BuboTN" sum="€0.02" no="20" type="3"/>
+  </round>
+ </game>
+ <game gamecode="11288436679">
+  <general>
+   <startdate>2025-02-23 09:33:09</startdate>
+   <players>
+    <player bet="€0" win="€0" chips="€4.24" dealer="0" seat="1" name="sde777"/>
+    <player bet="€0" win="€0" chips="€1.03" dealer="0" seat="3" name="almian1"/>
+    <player bet="€0" win="€0" chips="€2.09" dealer="0" seat="5" name="BuboTN"/>
+    <player bet="€0" win="€0" chips="€1.93" dealer="1" seat="6" name="cnuapkr"/>
+    <player bet="€0.06" win="€0" chips="€2.33" dealer="0" seat="8" name="Bredandbiher"/>
+    <player bet="€0.12" win="€0.12" chips="€3.64" dealer="0" seat="10" name="deeok"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Bredandbiher" sum="€0.01" no="1" type="1"/>
+   <action player="deeok" sum="€0.02" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="sde777" type="Pocket">X X</cards>
+   <action player="sde777" sum="€0" no="3" type="0"/>
+   <cards player="almian1" type="Pocket">X X</cards>
+   <action player="almian1" sum="€0" no="4" type="0"/>
+   <cards player="BuboTN" type="Pocket">X X</cards>
+   <action player="BuboTN" sum="€0" no="5" type="0"/>
+   <cards player="cnuapkr" type="Pocket">S6 CQ</cards>
+   <action player="cnuapkr" sum="€0" no="6" type="0"/>
+   <cards player="Bredandbiher" type="Pocket">X X</cards>
+   <action player="Bredandbiher" sum="€0.06" no="7" type="23"/>
+   <cards player="deeok" type="Pocket">X X</cards>
+   <action player="deeok" sum="€0.04" no="8" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SQ HJ D10</cards>
+   <action player="Bredandbiher" sum="€0" no="9" type="4"/>
+   <action player="deeok" sum="€0.06" no="10" type="5"/>
+   <action player="Bredandbiher" sum="€0" no="11" type="0"/>
+  </round>
+ </game>
+</session>
