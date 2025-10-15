@@ -22,6 +22,15 @@ SELECT COUNT(*) AS Hands FROM Hands;
 SELECT COUNT(*) AS Players FROM Players;
 SELECT COUNT(*) AS Actions FROM Actions;
 "
+# 4. Run validation suite
+# Write-Host "Step 4: Running validation checks..."
+# sqlcmd -S "(localdb)\MSSQLLocalDB" -d PokerHistory -Q "EXEC dbo.Validate_ETL;"
+
+# 4. Run validation suite with run_id
+$runId = [guid]::NewGuid().ToString()
+Write-Host "Step 4: Running validation checks (RunId=$runId)..."
+sqlcmd -S "(localdb)\MSSQLLocalDB" -d PokerHistory -Q "EXEC dbo.Validate_ETL @RunId = '$runId';"
+
 
 Write-Host "=== ETL Run Complete ==="
 
