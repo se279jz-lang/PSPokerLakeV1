@@ -1,0 +1,18 @@
++-----------------------+
+|     CashSessions      |
+|-----------------------|
+| session_id (PK, FK)   |
+| stake_level           |
+| min_buy_in            |
+| max_buy_in            |
++-----------------------+
+
++-----------------------+
+|      CashRebuys       |
+|-----------------------|
+| rebuy_id (PK)         |
+| session_id (FK)       |
+| player_id (FK)        |
+| rebuy_amount          |
+| rebuy_time            |
++-----------------------+

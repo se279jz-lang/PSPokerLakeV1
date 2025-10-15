@@ -1,0 +1,31 @@
++-----------------------+
+|  TournamentSessions   |
+|-----------------------|
+| session_id (PK, FK)   |
+| buy_in                |
+| rake                  |
+| starting_stack        |
+| total_players         |
++-----------------------+
+
++-----------------------+
+|     BlindLevels       |
+|-----------------------|
+| level_id (PK)         |
+| session_id (FK)       |
+| level_number          |
+| small_blind           |
+| big_blind             |
+| ante                  |
+| duration_min          |
++-----------------------+
+
++-----------------------+
+|  TournamentResults    |
+|-----------------------|
+| result_id (PK)        |
+| session_id (FK)       |
+| player_id (FK)        |
+| finishing_place       |
+| payout                |
++-----------------------+

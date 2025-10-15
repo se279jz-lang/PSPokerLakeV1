@@ -1,0 +1,38 @@
++------------------+         +------------------+         +------------------+
+|    Sessions      | 1     n |      Hands       | 1     n |     Actions      |
+|------------------|---------|------------------|---------|------------------|
+| session_id (PK)  |         | hand_id (PK)     |         | action_id (PK)   |
+| session_code     |         | session_id (FK)  |         | hand_id (FK)     |
+| game_format      |         | hand_number      |         | player_id (FK)   |
+| start_time       |         | pot_size         |         | street           |
+| end_time         |         | winner_id (FK)   |         | action_type      |
++------------------+         +------------------+         | amount           |
+                                                          | action_order     |
+                                                          +------------------+
+
+          | 1
+          |
+          | n
++------------------+
+|     Players      |
+|------------------|
+| player_id (PK)   |
+| session_id (FK)  |
+| seat_number      |
+| player_name      |
+| starting_chips   |
++------------------+
+
+          | 1
+          |
+          | n
++------------------+
+|    Results       |
+|------------------|
+| result_id (PK)   |
+| hand_id (FK)     |
+| player_id (FK)   |
+| hand_rank        |
+| is_winner        |
+| winnings         |
++------------------+
