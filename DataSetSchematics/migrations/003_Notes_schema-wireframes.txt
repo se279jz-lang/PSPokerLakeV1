@@ -1,0 +1,4 @@
+# 003_schema-wireframes.txt
+# Human-facing notes from original DataSetSchematics/schema-wireframes.txt
+
+(Include any wireframes or diagram notes here.)

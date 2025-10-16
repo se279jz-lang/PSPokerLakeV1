@@ -1,3 +1,5 @@
+-- 001_Validate_ETL.sql
+-- Migration: validation stored procedure
 CREATE OR ALTER PROCEDURE dbo.Validate_ETL
 AS
 BEGIN
@@ -65,7 +67,7 @@ BEGIN
     GROUP BY session_code
     HAVING COUNT(*) > 1;
 
-    -- 9. Duplicate file hashes in staging
+    -- 9. Duplicate file hashes in staging (example checks Lake_Tournament)
     PRINT 'Duplicate file hashes in staging:';
     SELECT Sha256Hash, COUNT(*) AS cnt
     FROM dbo.Lake_Tournament

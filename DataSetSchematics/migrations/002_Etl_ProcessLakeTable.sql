@@ -1,4 +1,6 @@
-﻿CREATE OR ALTER PROCEDURE dbo.Etl_ProcessLakeTable
+-- 002_Etl_ProcessLakeTable.sql
+-- Migration: ETL stored procedure that processes Lake_* staging tables
+CREATE OR ALTER PROCEDURE dbo.Etl_ProcessLakeTable
     @LakeTable NVARCHAR(128),
     @BatchSize INT = 500
 AS
@@ -22,7 +24,7 @@ BEGIN
     INTO #Batch(Id, FileName, XmlContent, Sha256Hash);';
 
     -- Temp table to hold batch
-    IF OBJECT_ID('tempdb..#Batch') IS NOT NULL DROP TABLE #Batch;
+    IF OBJECT_ID(''tempdb..#Batch'') IS NOT NULL DROP TABLE #Batch;
     CREATE TABLE #Batch (
         Id INT,
         FileName NVARCHAR(260),
@@ -43,10 +45,10 @@ BEGIN
 
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        DECLARE @session_code NVARCHAR(100) = @Xml.value('(/session/@sessioncode)[1]', 'NVARCHAR(100)');
-        DECLARE @game_format NVARCHAR(50)   = @Xml.value('(/session/general/gametype)[1]', 'NVARCHAR(50)');
-        DECLARE @start_time  DATETIME2      = @Xml.value('(/session/general/startdate)[1]', 'DATETIME2');
-        DECLARE @end_time    DATETIME2      = @Xml.value('(/session/general/enddate)[1]', 'DATETIME2');
+        DECLARE @session_code NVARCHAR(100) = @Xml.value(''(/session/@sessioncode)[1]'', ''NVARCHAR(100)'');
+        DECLARE @game_format NVARCHAR(50)   = @Xml.value(''(/session/general/gametype)[1]'', ''NVARCHAR(50)'');
+        DECLARE @start_time  DATETIME2      = @Xml.value(''(/session/general/startdate)[1]'', ''DATETIME2'');
+        DECLARE @end_time    DATETIME2      = @Xml.value(''(/session/general/enddate)[1]'', ''DATETIME2'');
 
         -- Insert Session if not exists
         IF NOT EXISTS (SELECT 1 FROM dbo.Sessions WHERE session_code = @session_code)
@@ -97,14 +99,4 @@ BEGIN
 
     CLOSE cur;
     DEALLOCATE cur;
-/*
 END
-🔑 Key Points
-Batching: Processes a limited number of rows per run (@BatchSize), so you can loop until staging is empty.
-
-Idempotency: Checks session_code and player_name before inserting, so no duplicates.
-
-Global identity: MERGE maintains PlayersGlobal automatically.
-
-Extensible: You can add shredding logic for Hands, Actions, and Results in the same loop.
-*/
