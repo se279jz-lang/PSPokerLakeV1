@@ -1,46 +1,82 @@
 -- 01_core-schema.sql
--- Core relational schema for Poker Hand History
-CREATE TABLE Sessions (
-    session_id     INT IDENTITY PRIMARY KEY,
-    session_code   VARCHAR(100) NOT NULL UNIQUE,  -- natural key from XML + filename
-    game_format    VARCHAR(50) NOT NULL,          -- 'Tournament' or 'Cash'
-    start_time     DATETIME2 NULL,
-    end_time       DATETIME2 NULL,
-    xml_content    XML NOT NULL,                  -- raw XML preserved
-    upload_time    DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+-- Core relational schema for Poker Hand History (extended Sessions)
+IF OBJECT_ID('dbo.Sessions','U') IS NULL
+BEGIN
+CREATE TABLE dbo.Sessions (
+    session_id        INT IDENTITY PRIMARY KEY,
+    session_code      VARCHAR(100) NOT NULL UNIQUE,   -- natural key
+    game_format       VARCHAR(50) NOT NULL,           -- 'Tournament' or 'Cash'
+    gametype          VARCHAR(50) NULL,               -- e.g. NLHE, PLO
+    limit_type        VARCHAR(50) NULL,               -- No Limit, Pot Limit, etc.
+    stakes            VARCHAR(50) NULL,               -- e.g. 0.01/0.02
+    currency          VARCHAR(10) NULL,               -- USD, EUR, etc.
+    tablename         VARCHAR(100) NULL,
+    max_players       INT NULL,
+    seats             INT NULL,
+    buy_in            DECIMAL(18,2) NULL,             -- tournaments
+    rake              DECIMAL(18,2) NULL,             -- tournaments
+    starting_stack    DECIMAL(18,2) NULL,             -- tournaments
+    start_time        DATETIME2 NULL,
+    end_time          DATETIME2 NULL,
+    xml_content       XML NOT NULL,                   -- raw XML preserved
+    upload_time       DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
 );
+END
 
-CREATE TABLE Players (
+IF OBJECT_ID('dbo.Players','U') IS NULL
+BEGIN
+CREATE TABLE dbo.Players (
     player_id      INT IDENTITY PRIMARY KEY,
-    session_id     INT NOT NULL FOREIGN KEY REFERENCES Sessions(session_id),
-    seat_number    INT,
-    player_name    VARCHAR(100),
-    starting_chips DECIMAL(18,2)
+    session_id     INT NOT NULL,
+    seat_number    INT NULL,
+    player_name    VARCHAR(100) NULL,
+    starting_chips DECIMAL(18,2) NULL,
+    global_player_id INT NULL
 );
+ALTER TABLE dbo.Players
+ADD CONSTRAINT FK_Players_Sessions FOREIGN KEY (session_id) REFERENCES dbo.Sessions(session_id);
+END
 
-CREATE TABLE Hands (
+IF OBJECT_ID('dbo.Hands','U') IS NULL
+BEGIN
+CREATE TABLE dbo.Hands (
     hand_id        INT IDENTITY PRIMARY KEY,
-    session_id     INT NOT NULL FOREIGN KEY REFERENCES Sessions(session_id),
-    hand_number    BIGINT,
-    pot_size       DECIMAL(18,2),
-    winner_id      INT NULL FOREIGN KEY REFERENCES Players(player_id)
+    session_id     INT NOT NULL,
+    hand_number    BIGINT NULL,
+    pot_size       DECIMAL(18,2) NULL,
+    winner_id      INT NULL
 );
+ALTER TABLE dbo.Hands
+ADD CONSTRAINT FK_Hands_Sessions FOREIGN KEY (session_id) REFERENCES dbo.Sessions(session_id);
+END
 
-CREATE TABLE Actions (
+IF OBJECT_ID('dbo.Actions','U') IS NULL
+BEGIN
+CREATE TABLE dbo.Actions (
     action_id      INT IDENTITY PRIMARY KEY,
-    hand_id        INT NOT NULL FOREIGN KEY REFERENCES Hands(hand_id),
-    player_id      INT NOT NULL FOREIGN KEY REFERENCES Players(player_id),
-    street         VARCHAR(20),
-    action_type    VARCHAR(20),
-    amount         DECIMAL(18,2),
-    action_order   INT
+    hand_id        INT NOT NULL,
+    player_id      INT NOT NULL,
+    street         VARCHAR(20) NULL,
+    action_type    VARCHAR(50) NULL,
+    amount         DECIMAL(18,2) NULL,
+    action_order   INT NULL
 );
+ALTER TABLE dbo.Actions
+ADD CONSTRAINT FK_Actions_Hands FOREIGN KEY (hand_id) REFERENCES dbo.Hands(hand_id);
+END
 
-CREATE TABLE Results (
+IF OBJECT_ID('dbo.Results','U') IS NULL
+BEGIN
+CREATE TABLE dbo.Results (
     result_id      INT IDENTITY PRIMARY KEY,
-    hand_id        INT NOT NULL FOREIGN KEY REFERENCES Hands(hand_id),
-    player_id      INT NOT NULL FOREIGN KEY REFERENCES Players(player_id),
-    hand_rank      VARCHAR(50),
-    is_winner      BIT,
-    winnings       DECIMAL(18,2)
+    hand_id        INT NOT NULL,
+    player_id      INT NOT NULL,
+    hand_rank      VARCHAR(50) NULL,
+    is_winner      BIT NULL,
+    winnings       DECIMAL(18,2) NULL
 );
+ALTER TABLE dbo.Results
+ADD CONSTRAINT FK_Results_Hands FOREIGN KEY (hand_id) REFERENCES dbo.Hands(hand_id);
+END
+
+-- PlayersGlobal table may be created by the players-global migration (02_players-global.sql)
