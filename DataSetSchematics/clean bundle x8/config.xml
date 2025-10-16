@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <RestoreDirectory>Restore</RestoreDirectory>
+  <ConnectionString>Server=(localdb)\clean bundle x8DB;Database=clean bundle x8Lake;Integrated Security=True;</ConnectionString>
+  <RootFolderName>clean bundle x8</RootFolderName>
+  <InstanceName>clean bundle x8DB</InstanceName>
+  <DatabaseName>clean bundle x8Lake</DatabaseName>
+  <HistoryDirectory>D:\betfair_history_data</HistoryDirectory>
+  <historytable name="Tables" />
+  <historytable name="Tournaments" />
+</config>
