@@ -11,7 +11,7 @@ Write-Host "Available LocalDB Instances:"
 for ($i = 0; $i -lt $instances.Count; $i++) {
     Write-Host "$($i + 1): $($instances[$i])"
 }
-
+https://copilot.microsoft.com/shares/pages/qFJtsZUd2rCLimyddkvSL
 # Prompt user to select an instance
 $selection = Read-Host "Enter the number of the instance to delete"
 $index = [int]$selection - 1

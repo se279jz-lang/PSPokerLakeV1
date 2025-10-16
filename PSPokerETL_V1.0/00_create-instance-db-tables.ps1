@@ -1,10 +1,13 @@
 ﻿# Load config.xml for consistent settings
 [xml]$config = Get-Content "$PSScriptRoot\config.xml"
 
-$instanceName = $config.config.InstanceName
-$databaseName = $config.config.DatabaseName
-$dataFilePath = "$env:USERPROFILE\${databaseName}.mdf"
-$logFilePath = "$env:USERPROFILE\${databaseName}.ldf"
+$instanceName = $config.config.InstanceName.ToString().Trim()
+$databaseName = $config.config.DatabaseName.ToString().Trim()
+$HistoryDirectory = $config.config.HistoryDirectory.ToString().Trim()
+$SqlConnectionString = $config.config.ConnectionString.ToString().Trim()
+
+$dataFilePath = Join-Path $env:USERPROFILE ("{0}.mdf" -f $databaseName)
+$logFilePath = Join-Path $env:USERPROFILE ("{0}.ldf" -f $databaseName)
 
 # Create and start LocalDB instance
 sqllocaldb create $instanceName

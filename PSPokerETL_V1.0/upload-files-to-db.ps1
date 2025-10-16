@@ -1,7 +1,28 @@
-﻿# Load config
-[xml]$config = Get-Content "$PSScriptRoot\config.xml"
-$SqlConnectionString = $config.config.ConnectionString.ToString().Trim()
-$HistoryDirectory = $config.config.HistoryDirectory.ToString().Trim()
+﻿param(
+    [string]$ConfigPath = "$PSScriptRoot\config.xml",
+    [string]$HistoryRoot = $null,
+    [string]$Instance = $null,
+    [string]$Database = $null,
+    [string]$Since = $null
+)
+
+# Load config (or use provided ConfigPath)
+[xml]$config = Get-Content $ConfigPath
+
+# Determine connection string: prefer explicit instance/database if provided
+if ($Instance -and $Database) {
+    $SqlConnectionString = "Server=$Instance;Database=$Database;Integrated Security=True;"
+} else {
+    $SqlConnectionString = $config.config.ConnectionString.ToString().Trim()
+}
+
+# Determine history directory: prefer explicit override
+if ($HistoryRoot) {
+    $HistoryDirectory = $HistoryRoot
+} else {
+    $HistoryDirectory = $config.config.HistoryDirectory.ToString().Trim()
+}
+
 $historyTables = $config.config.historytable
 
 function Get-Sha256Hash([string]$Content) {

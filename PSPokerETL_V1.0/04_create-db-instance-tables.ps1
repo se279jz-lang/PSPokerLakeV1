@@ -1,6 +1,7 @@
 ﻿# Load config
 [xml]$config = Get-Content "$PSScriptRoot\config.xml"
-$SqlConnectionString = $config.config.ConnectionString
+$SqlConnectionString = $config.config.ConnectionString.ToString().Trim()
+$HistoryDirectory = $config.config.HistoryDirectory.ToString().Trim()
 $tables = $config.config.historytable
 
 write-host "$PSScriptRoot\config.xml"
