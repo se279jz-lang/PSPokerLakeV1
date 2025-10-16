@@ -1,0 +1,488 @@
+﻿# Discrete end-to-end script bundle
+
+You asked for a clean, production‑ready factory line. Here’s a curated set of six scripts that cover staging setup, core schema, upload, ETL, validation, and orchestration. They’re parameterized, idempotent, and consistent with the assets you’ve already prototyped.
+
+---
+
+## 1) Lake staging constructor and updater (install-datalake.ps1)
+
+```powershell
+<#
+File: install-datalake.ps1
+Purpose: Create or update Lake_* staging tables (idempotent, constraint-first).
+Usage: .\install-datalake.ps1 -Instance "(localdb)\MSSQLLocalDB" -Database "PokerHistory" -Tables "Lake_Tournament","Lake_Cash"
+#>
+param(
+  [string]$Instance = "(localdb)\MSSQLLocalDB",
+  [string]$Database = "PokerHistory",
+  [string[]]$Tables = @("Lake_Tournament","Lake_Cash")
+)
+
+$ErrorActionPreference = "Stop"
+function Invoke-Sql([string]$Q){ & sqlcmd -S $Instance -d $Database -b -Q $Q }
+
+Write-Host "=== Ensuring Lake_* staging tables in $Database ==="
+foreach ($table in $Tables) {
+  Write-Host "→ $table"
+  Invoke-Sql @"
+IF OBJECT_ID('dbo.$table','U') IS NULL
+BEGIN
+  CREATE TABLE dbo.$table (
+    Id INT IDENTITY(1,1) PRIMARY KEY
+  );
+END
+"@
+
+  # Columns
+  $cols = @(
+    "FileName NVARCHAR(260) NOT NULL",
+    "XmlContent XML NOT NULL",
+    "UploadTime DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()",
+    "FileSize BIGINT NULL",
+    "Sha256Hash CHAR(64) NOT NULL",
+    "OriginalCreationTime DATETIME2 NULL",
+    "OriginalLastWriteTime DATETIME2 NULL",
+    "SessionCode NVARCHAR(100) NULL",
+    "processed BIT NOT NULL DEFAULT 0"
+  )
+  foreach ($c in $cols) {
+    $name = $c.Split(' ')[0]
+    Invoke-Sql @"
+IF COL_LENGTH('dbo.$table', '$name') IS NULL
+  ALTER TABLE dbo.$table ADD $c;
+"@
+  }
+
+  # Constraints
+  $uqHash = "UQ_${table}_Hash"
+  $uqSess = "UQ_${table}_Session"
+  Invoke-Sql @"
+IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE name = '$uqHash' AND type = 'UQ')
+  ALTER TABLE dbo.$table ADD CONSTRAINT $uqHash UNIQUE (Sha256Hash);
+"@
+  Invoke-Sql @"
+IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE name = '$uqSess' AND type = 'UQ')
+  ALTER TABLE dbo.$table ADD CONSTRAINT $uqSess UNIQUE (SessionCode);
+"@
+}
+Write-Host "=== Lake_* tables verified/updated ==="
+```
+
+---
+
+## 2) Core relational schema (core-shared-schema.sql)
+
+```sql
+-- File: core-shared-schema.sql
+-- Purpose: Canonical relational schema with fidelity and constraints.
+
+CREATE TABLE Sessions (
+  session_id INT IDENTITY PRIMARY KEY,
+  session_code VARCHAR(100) NOT NULL UNIQUE,
+  game_format VARCHAR(50) NOT NULL,
+  gametype VARCHAR(50) NULL,
+  limit_type VARCHAR(50) NULL,
+  stakes VARCHAR(50) NULL,
+  currency VARCHAR(10) NULL,
+  tablename VARCHAR(100) NULL,
+  max_players INT NULL,
+  seats INT NULL,
+  buy_in DECIMAL(18,2) NULL,
+  rake DECIMAL(18,2) NULL,
+  starting_stack DECIMAL(18,2) NULL,
+  start_time DATETIME2 NULL,
+  end_time DATETIME2 NULL,
+  xml_content XML NOT NULL,
+  upload_time DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+);
+
+CREATE TABLE Players (
+  player_id INT IDENTITY PRIMARY KEY,
+  session_id INT NOT NULL FOREIGN KEY REFERENCES Sessions(session_id),
+  seat_number INT,
+  player_name VARCHAR(100),
+  starting_chips DECIMAL(18,2),
+  global_player_id INT NULL FOREIGN KEY REFERENCES PlayersGlobal(global_player_id)
+);
+
+CREATE TABLE Hands (
+  hand_id INT IDENTITY PRIMARY KEY,
+  session_id INT NOT NULL FOREIGN KEY REFERENCES Sessions(session_id),
+  hand_number BIGINT,
+  pot_size DECIMAL(18,2),
+  winner_id INT NULL FOREIGN KEY REFERENCES Players(player_id)
+);
+
+CREATE TABLE Actions (
+  action_id INT IDENTITY PRIMARY KEY,
+  hand_id INT NOT NULL FOREIGN KEY REFERENCES Hands(hand_id),
+  player_id INT NOT NULL FOREIGN KEY REFERENCES Players(player_id),
+  street VARCHAR(20),
+  action_type VARCHAR(20),
+  amount DECIMAL(18,2),
+  action_order INT
+);
+
+CREATE TABLE Results (
+  result_id INT IDENTITY PRIMARY KEY,
+  hand_id INT NOT NULL FOREIGN KEY REFERENCES Hands(hand_id),
+  player_id INT NOT NULL FOREIGN KEY REFERENCES Players(player_id),
+  hand_rank VARCHAR(50),
+  is_winner BIT,
+  winnings DECIMAL(18,2)
+);
+
+-- Global identity
+CREATE TABLE PlayersGlobal (
+  global_player_id INT IDENTITY PRIMARY KEY,
+  player_name VARCHAR(100) NOT NULL UNIQUE,
+  first_seen DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME(),
+  last_seen DATETIME2 NULL
+);
+```
+
+---
+
+## 3) Uploader (upload-files-to-db.ps1)
+
+```powershell
+<#
+File: upload-files-to-db.ps1
+Purpose: Walk HistoryRoot, hash files, extract session_code, insert into Lake_* with constraints.
+Usage: .\upload-files-to-db.ps1 -Instance "(localdb)\MSSQLLocalDB" -Database "PokerHistory" -HistoryRoot ".\History" -LakeTable "Lake_Tournament"
+#>
+param(
+  [string]$Instance = "(localdb)\MSSQLLocalDB",
+  [string]$Database = "PokerHistory",
+  [string]$HistoryRoot = ".\History",
+  [string]$LakeTable = "Lake_Tournament",
+  [string]$Since = $null
+)
+
+$ErrorActionPreference = "Stop"
+function Invoke-Sql([string]$Q){ & sqlcmd -S $Instance -d $Database -b -Q $Q }
+
+Write-Host "=== Uploading to $LakeTable from $HistoryRoot ==="
+$files = Get-ChildItem -Path $HistoryRoot -Filter *.xml -File -Recurse
+if ($Since) { $sinceDate = Get-Date $Since; $files = $files | Where-Object { $_.LastWriteTime -ge $sinceDate } }
+
+foreach ($f in $files) {
+  $bytes = [System.IO.File]::ReadAllBytes($f.FullName)
+  $sha = [System.Security.Cryptography.SHA256]::Create().ComputeHash($bytes)
+  $hash = ([System.BitConverter]::ToString($sha)).Replace("-", "").ToLower()
+  $xml = [xml](Get-Content -Path $f.FullName -Raw)
+
+  $sessionCode = $xml.session.sessioncode
+  if (-not $sessionCode) { $sessionCode = [System.IO.Path]::GetFileNameWithoutExtension($f.Name) }
+
+  $fileSize = $f.Length
+  $cTime = $f.CreationTimeUtc
+  $wTime = $f.LastWriteTimeUtc
+  $xmlEsc = ($xml.OuterXml.Replace("'", "''"))
+
+  try {
+    Invoke-Sql @"
+INSERT INTO dbo.$LakeTable (FileName, XmlContent, UploadTime, FileSize, Sha256Hash, OriginalCreationTime, OriginalLastWriteTime, SessionCode, processed)
+VALUES (N'$($f.Name)', CONVERT(XML, N'$xmlEsc'), SYSUTCDATETIME(), $fileSize, '$hash', '$($cTime.ToString("o"))', '$($wTime.ToString("o"))', N'$sessionCode', 0);
+"@
+    Write-Host "Uploaded: $($f.Name)"
+  } catch {
+    if ($_.Exception.Message -match "UQ_.*_Hash" -or $_.Exception.Message -match "UQ_.*_Session") {
+      Write-Host "Skipped (duplicate): $($f.Name)"
+    } else {
+      Write-Host "Error: $($f.Name) -> $($_.Exception.Message)"
+    }
+  }
+}
+Write-Host "=== Upload complete ==="
+```
+
+---
+
+## 4) ETL shredding procedure (Etl_ProcessLakeTable.sql)
+
+```sql
+-- File: Etl_ProcessLakeTable.sql
+-- Purpose: Batch-process Lake_* rows into Sessions/Players/Hands/Actions/Results and PlayersGlobal.
+
+CREATE OR ALTER PROCEDURE dbo.Etl_ProcessLakeTable
+  @LakeTable NVARCHAR(128),
+  @BatchSize INT = 500
+AS
+BEGIN
+  SET NOCOUNT ON;
+
+  IF OBJECT_ID('tempdb..#Batch') IS NOT NULL DROP TABLE #Batch;
+  CREATE TABLE #Batch (Id INT, FileName NVARCHAR(260), XmlContent XML, Sha256Hash CHAR(64));
+
+  DECLARE @sql NVARCHAR(MAX) =
+  N';WITH cte AS (
+      SELECT TOP (' + CAST(@BatchSize AS NVARCHAR(10)) + N') Id, FileName, XmlContent, Sha256Hash
+      FROM ' + QUOTENAME(@LakeTable) + N'
+      WHERE processed = 0
+      ORDER BY Id
+    )
+    UPDATE cte SET processed = 1
+    OUTPUT inserted.Id, inserted.FileName, inserted.XmlContent, inserted.Sha256Hash INTO #Batch(Id, FileName, XmlContent, Sha256Hash);';
+
+  EXEC sp_executesql @sql;
+
+  DECLARE @Id INT, @FileName NVARCHAR(260), @Xml XML, @Hash CHAR(64);
+  DECLARE cur CURSOR LOCAL FAST_FORWARD FOR SELECT Id, FileName, XmlContent, Sha256Hash FROM #Batch;
+  OPEN cur; FETCH NEXT FROM cur INTO @Id, @FileName, @Xml, @Hash;
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    DECLARE @session_code NVARCHAR(100) = @Xml.value('(/session/@sessioncode)[1]', 'NVARCHAR(100)');
+    DECLARE @game_format NVARCHAR(50)  = @Xml.value('(/session/general/gametype)[1]', 'NVARCHAR(50)');
+    DECLARE @gametype     NVARCHAR(50) = @Xml.value('(/session/general/gametype)[1]', 'NVARCHAR(50)');
+    DECLARE @limit_type   NVARCHAR(50) = @Xml.value('(/session/general/limittype)[1]', 'NVARCHAR(50)');
+    DECLARE @stakes       NVARCHAR(50) = @Xml.value('(/session/general/stakes)[1]', 'NVARCHAR(50)');
+    DECLARE @currency     NVARCHAR(10) = @Xml.value('(/session/general/currency)[1]', 'NVARCHAR(10)');
+    DECLARE @tablename    NVARCHAR(100)= @Xml.value('(/session/general/tablename)[1]', 'NVARCHAR(100)');
+    DECLARE @max_players  INT          = @Xml.value('(/session/general/maxplayers)[1]', 'INT');
+    DECLARE @seats        INT          = @Xml.value('(/session/general/seats)[1]', 'INT');
+    DECLARE @buy_in       DECIMAL(18,2)= @Xml.value('(/session/general/buyin)[1]', 'DECIMAL(18,2)');
+    DECLARE @rake         DECIMAL(18,2)= @Xml.value('(/session/general/rake)[1]', 'DECIMAL(18,2)');
+    DECLARE @starting_stack DECIMAL(18,2)= @Xml.value('(/session/general/startingstack)[1]', 'DECIMAL(18,2)');
+    DECLARE @start_time   DATETIME2    = @Xml.value('(/session/general/startdate)[1]', 'DATETIME2');
+    DECLARE @end_time     DATETIME2    = @Xml.value('(/session/general/enddate)[1]', 'DATETIME2');
+
+    IF NOT EXISTS (SELECT 1 FROM dbo.Sessions WHERE session_code = @session_code)
+      INSERT INTO dbo.Sessions (session_code, game_format, gametype, limit_type, stakes, currency, tablename, max_players, seats, buy_in, rake, starting_stack, start_time, end_time, xml_content)
+      VALUES (@session_code, @game_format, @gametype, @limit_type, @stakes, @currency, @tablename, @max_players, @seats, @buy_in, @rake, @starting_stack, @start_time, @end_time, @Xml);
+
+    DECLARE @session_id INT = (SELECT session_id FROM dbo.Sessions WHERE session_code = @session_code);
+
+    -- Upsert PlayersGlobal
+    MERGE dbo.PlayersGlobal AS tgt
+    USING (SELECT DISTINCT p.value('@name','NVARCHAR(100)') AS player_name FROM @Xml.nodes('/session/players/player') AS t(p)) AS src
+    ON tgt.player_name = src.player_name
+    WHEN MATCHED THEN UPDATE SET last_seen = SYSUTCDATETIME()
+    WHEN NOT MATCHED THEN INSERT (player_name, first_seen, last_seen) VALUES (src.player_name, SYSUTCDATETIME(), SYSUTCDATETIME());
+
+    -- Insert Players
+    INSERT INTO dbo.Players (session_id, seat_number, player_name, starting_chips, global_player_id)
+    SELECT @session_id,
+           p.value('@seat','INT'),
+           p.value('@name','NVARCHAR(100)'),
+           p.value('@chips','DECIMAL(18,2)'),
+           g.global_player_id
+    FROM @Xml.nodes('/session/players/player') AS t(p)
+    OUTER APPLY (SELECT global_player_id FROM dbo.PlayersGlobal WHERE player_name = p.value('@name','NVARCHAR(100)')) g
+    WHERE NOT EXISTS (
+      SELECT 1 FROM dbo.Players pl
+      WHERE pl.session_id = @session_id AND pl.player_name = p.value('@name','NVARCHAR(100)')
+    );
+
+    -- Map for Hands
+    IF OBJECT_ID('tempdb..#HandMap') IS NOT NULL DROP TABLE #HandMap;
+    CREATE TABLE #HandMap (hand_id INT, hand_number BIGINT);
+
+    INSERT INTO dbo.Hands (session_id, hand_number, pot_size)
+    OUTPUT inserted.hand_id, h.value('@id','BIGINT') INTO #HandMap(hand_id, hand_number)
+    SELECT @session_id,
+           h.value('@id','BIGINT'),
+           h.value('@pot','DECIMAL(18,2)')
+    FROM @Xml.nodes('/session/hands/hand') AS t(h)
+    WHERE NOT EXISTS (
+      SELECT 1 FROM dbo.Hands hh
+      WHERE hh.session_id = @session_id AND hh.hand_number = h.value('@id','BIGINT')
+    );
+
+    -- Actions
+    INSERT INTO dbo.Actions (hand_id, player_id, street, action_type, amount, action_order)
+    SELECT hm.hand_id,
+           p.player_id,
+           a.value('@street','VARCHAR(20)'),
+           a.value('@type','VARCHAR(20)'),
+           a.value('@amount','DECIMAL(18,2)'),
+           ROW_NUMBER() OVER (PARTITION BY hm.hand_id ORDER BY a.value('@order','INT'))
+    FROM @Xml.nodes('/session/hands/hand') AS t(h)
+    JOIN #HandMap hm ON hm.hand_number = h.value('@id','BIGINT')
+    CROSS APPLY h.nodes('actions/action') AS act(a)
+    JOIN dbo.Players p
+      ON p.session_id = @session_id AND p.player_name = a.value('@player','NVARCHAR(100)');
+
+    -- Results
+    INSERT INTO dbo.Results (hand_id, player_id, hand_rank, is_winner, winnings)
+    SELECT hm.hand_id,
+           p.player_id,
+           r.value('@handrank','VARCHAR(50)'),
+           CASE r.value('@winner','VARCHAR(5)') WHEN 'true' THEN 1 ELSE 0 END,
+           r.value('@winnings','DECIMAL(18,2)')
+    FROM @Xml.nodes('/session/hands/hand') AS t(h)
+    JOIN #HandMap hm ON hm.hand_number = h.value('@id','BIGINT')
+    CROSS APPLY h.nodes('results/result') AS res(r)
+    JOIN dbo.Players p
+      ON p.session_id = @session_id AND p.player_name = r.value('@player','NVARCHAR(100)');
+
+    FETCH NEXT FROM cur INTO @Id, @FileName, @Xml, @Hash;
+  END
+
+  CLOSE cur; DEALLOCATE cur;
+END
+```
+
+---
+
+## 5) Validation and logging (Validate_ETL.sql + ETL_ValidationLog.sql)
+
+```sql
+-- File: ETL_ValidationLog.sql
+CREATE TABLE dbo.ETL_ValidationLog (
+  log_id INT IDENTITY PRIMARY KEY,
+  run_id UNIQUEIDENTIFIER NOT NULL,
+  check_name NVARCHAR(100) NOT NULL,
+  anomaly_count INT NOT NULL,
+  sample_data NVARCHAR(MAX) NULL,
+  log_time DATETIME2 NOT NULL DEFAULT SYSUTCDATETIME()
+);
+```
+
+```sql
+-- File: Validate_ETL.sql
+CREATE OR ALTER PROCEDURE dbo.Validate_ETL
+  @RunId UNIQUEIDENTIFIER = NULL
+AS
+BEGIN
+  SET NOCOUNT ON;
+  IF @RunId IS NULL SET @RunId = NEWID();
+
+  DECLARE @cnt INT;
+
+  -- Sessions with no hands
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Sessions s
+  LEFT JOIN dbo.Hands h ON s.session_id = h.session_id
+  GROUP BY s.session_id
+  HAVING COUNT(h.hand_id) = 0;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'SessionsWithNoHands', ISNULL(@cnt,0));
+
+  -- Hands with no actions
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Hands h
+  LEFT JOIN dbo.Actions a ON h.hand_id = a.hand_id
+  GROUP BY h.hand_id
+  HAVING COUNT(a.action_id) = 0;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'HandsWithNoActions', ISNULL(@cnt,0));
+
+  -- Hands with no results
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Hands h
+  LEFT JOIN dbo.Results r ON h.hand_id = r.hand_id
+  WHERE r.result_id IS NULL;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'HandsWithNoResults', ISNULL(@cnt,0));
+
+  -- Multiple winners per hand
+  SELECT @cnt = COUNT(*)
+  FROM (
+    SELECT h.hand_id, COUNT(*) AS winners
+    FROM dbo.Hands h
+    JOIN dbo.Results r ON h.hand_id = r.hand_id
+    WHERE r.is_winner = 1
+    GROUP BY h.hand_id
+    HAVING COUNT(*) <> 1
+  ) x;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'MultipleWinners', ISNULL(@cnt,0));
+
+  -- Actions with missing player
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Actions a
+  LEFT JOIN dbo.Players p ON a.player_id = p.player_id
+  WHERE p.player_id IS NULL;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'ActionsMissingPlayer', ISNULL(@cnt,0));
+
+  -- Results with missing player
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Results r
+  LEFT JOIN dbo.Players p ON r.player_id = p.player_id
+  WHERE p.player_id IS NULL;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'ResultsMissingPlayer', ISNULL(@cnt,0));
+
+  -- Players without global identity
+  SELECT @cnt = COUNT(*)
+  FROM dbo.Players p
+  LEFT JOIN dbo.PlayersGlobal g ON p.global_player_id = g.global_player_id
+  WHERE g.global_player_id IS NULL;
+  INSERT INTO dbo.ETL_ValidationLog(run_id, check_name, anomaly_count)
+  VALUES(@RunId, N'PlayersWithoutGlobal', ISNULL(@cnt,0));
+END
+```
+
+---
+
+## 6) Master orchestrator (master-etl.ps1)
+
+```powershell
+<#
+File: master-etl.ps1
+Purpose: End-to-end run: install/upgrade staging, upload files, run ETL, snapshot metrics, validate & log.
+Usage: .\master-etl.ps1 -Instance "(localdb)\MSSQLLocalDB" -Database "PokerHistory" -HistoryRoot ".\History" -LakeTables "Lake_Tournament","Lake_Cash" -BatchSize 500
+#>
+param(
+  [string]$Instance = "(localdb)\MSSQLLocalDB",
+  [string]$Database = "PokerHistory",
+  [string]$HistoryRoot = ".\History",
+  [string[]]$LakeTables = @("Lake_Tournament","Lake_Cash"),
+  [int]$BatchSize = 500
+)
+
+$ErrorActionPreference = "Stop"
+function Sql([string]$q){ & sqlcmd -S $Instance -d $Database -b -Q $q }
+
+Write-Host "=== Poker Hand History ETL Run ==="
+
+# Install/upgrade Lake_* staging
+Write-Host "Step 0: Ensuring Lake_* staging..."
+& .\install-datalake.ps1 -Instance $Instance -Database $Database -Tables $LakeTables
+
+# Upload files for each Lake table (choose per format if needed; here we demo tournament)
+Write-Host "Step 1: Uploading XML files to Lake_Tournament..."
+& .\upload-files-to-db.ps1 -Instance $Instance -Database $Database -HistoryRoot $HistoryRoot -LakeTable "Lake_Tournament"
+
+# ETL: process all Lake_* tables
+Write-Host "Step 2: ETL shredding..."
+foreach ($lake in $LakeTables) {
+  Write-Host "  → Processing $lake in batches of $BatchSize"
+  Sql "EXEC dbo.Etl_ProcessLakeTable @LakeTable = N'$lake', @BatchSize = $BatchSize;"
+}
+
+# Metrics snapshot
+Write-Host "Step 3: Metrics..."
+Sql @"
+SET NOCOUNT ON;
+SELECT 'Sessions' AS name, COUNT(*) AS cnt FROM Sessions;
+SELECT 'Players' AS name, COUNT(*) AS cnt FROM Players;
+SELECT 'Hands'   AS name, COUNT(*) AS cnt FROM Hands;
+SELECT 'Actions' AS name, COUNT(*) AS cnt FROM Actions;
+SELECT 'Results' AS name, COUNT(*) AS cnt FROM Results;
+SELECT 'GlobalPlayers' AS name, COUNT(*) AS cnt FROM PlayersGlobal;
+"@
+
+# Validation + logging
+Write-Host "Step 4: Validation and logging..."
+$runId = [guid]::NewGuid().ToString()
+Sql "EXEC dbo.Validate_ETL @RunId = '$runId';"
+
+Write-Host "=== ETL Run Complete ==="
+```
+
+---
+
+## Notes on usage and flow
+
+- Start by running core schema SQL in your database to ensure `Sessions/Players/.../PlayersGlobal` exist.
+- Run `install-datalake.ps1` to enforce the latest Lake_* structure and constraints.
+- Use `upload-files-to-db.ps1` to load XMLs into the Lake with dedupe by hash and by session code.
+- Execute `Etl_ProcessLakeTable.sql` to shred batches from Lake_* into relational tables.
+- Run `Validate_ETL.sql` to log anomalies into `ETL_ValidationLog` with a `run_id`.
+- Drive it all with `master-etl.ps1` for a single push‑button cycle.
+
+If you want these scripts adapted to your config.xml loop for auto‑discovering Lake_* tables, say the word and I’ll switch the hardcoded arrays to schema‑driven discovery.

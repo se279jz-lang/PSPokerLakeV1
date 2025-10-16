@@ -5,6 +5,7 @@ $configFile = Join-Path $PSScriptRoot "config.xml"
 
 $instanceName = "${RootFolderName}DB"
 $databaseName = "${RootFolderName}Lake"
+$server="(localdb)\${instanceName}"
 $connectionString = "Server=(localdb)\$instanceName;Database=$databaseName;Integrated Security=True;"
 
 # Create XML document

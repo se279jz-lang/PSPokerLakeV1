@@ -4,6 +4,7 @@
 $instanceName = $config.config.InstanceName
 $databaseName = $config.config.DatabaseName
 $dataFilePath = "$env:USERPROFILE\${databaseName}.mdf"
+$logFilePath = "$env:USERPROFILE\${databaseName}.ldf"
 
 # Create and start LocalDB instance
 sqllocaldb create $instanceName
@@ -14,15 +15,16 @@ $server = "(localdb)\$instanceName"
 $query = @"
 CREATE DATABASE [$databaseName]
 ON (NAME = N'$databaseName', FILENAME = N'$dataFilePath')
-LOG ON (NAME = N'${databaseName}_log', FILENAME = N'$env:USERPROFILE\${databaseName}_log.ldf');
+LOG ON (NAME = N'${databaseName}_log', FILENAME = N'$logFilePath');
 GO
 USE [$databaseName];
 GO
 "@
 
 $tables = $config.config.historytable
-$canonicalschema = @"
-CREATE TABLE MnemonicArtefacts (
+# Canonical schema
+$canonicalSchema = @"
+CREATE TABLE dbo.{0} (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     FileName NVARCHAR(260) NOT NULL,
     XmlContent XML NOT NULL,
@@ -31,8 +33,9 @@ CREATE TABLE MnemonicArtefacts (
     Sha256Hash CHAR(64) NOT NULL,
     OriginalCreationTime DATETIME2 NULL,
     OriginalLastWriteTime DATETIME2 NULL
-GO
+)
 "@
+
 Write-Host "Tables to create:"
 foreach ($table in $tables) {
     Write-Host " - Lake_$($table.name.Trim())"

@@ -2,6 +2,7 @@
 [xml]$config = Get-Content "$PSScriptRoot\config.xml"
 $SqlConnectionString = $config.config.ConnectionString
 $tables = $config.config.historytable
+
 write-host "$PSScriptRoot\config.xml"
 
 Write-Host "Tables to create:"

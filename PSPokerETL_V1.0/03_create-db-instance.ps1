@@ -4,6 +4,7 @@
 $instanceName = $config.config.InstanceName
 $databaseName = $config.config.DatabaseName
 $dataFilePath = "$env:USERPROFILE\${databaseName}.mdf"
+$logFilePath = "$env:USERPROFILE\${databaseName}.ldf"
 
 # Create and start LocalDB instance
 sqllocaldb create $instanceName
@@ -14,16 +15,7 @@ $server = "(localdb)\$instanceName"
 $query = @"
 CREATE DATABASE [$databaseName]
 ON (NAME = N'$databaseName', FILENAME = N'$dataFilePath')
-LOG ON (NAME = N'${databaseName}_log', FILENAME = N'$env:USERPROFILE\${databaseName}_log.ldf');
-GO
-USE [$databaseName];
-GO
-CREATE TABLE MnemonicArtefacts (
-    id INT PRIMARY KEY IDENTITY,
-    tag NVARCHAR(100),
-    content NVARCHAR(MAX),
-    timestamp DATETIME DEFAULT GETDATE()
-);
+LOG ON (NAME = N'${databaseName}_log', FILENAME = N'$logFilePath');
 GO
 "@
 
