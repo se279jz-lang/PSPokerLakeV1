@@ -77,9 +77,9 @@ foreach ($table in $historyTables) {
 
         $insertCmd = $connection.CreateCommand()
         $insertCmd.CommandText = @"
-            INSERT INTO dbo.Lake_$subfolder (FileName, XmlContent, UploadTime, FileSize, Sha256Hash, OriginalCreationTime, OriginalLastWriteTime)
-            VALUES (@FileName, @XmlContent, SYSUTCDATETIME(), @FileSize, @Sha256Hash, @OriginalCreationTime, @OriginalLastWriteTime)
-            "@
+INSERT INTO dbo.Lake_$subfolder (FileName, XmlContent, UploadTime, FileSize, Sha256Hash, OriginalCreationTime, OriginalLastWriteTime)
+VALUES (@FileName, @XmlContent, SYSUTCDATETIME(), @FileSize, @Sha256Hash, @OriginalCreationTime, @OriginalLastWriteTime)
+"@
     $insertCmd.Parameters.Add((New-Object Data.SqlClient.SqlParameter("@FileName", $fileName)))
     $insertCmd.Parameters.Add((New-Object Data.SqlClient.SqlParameter("@XmlContent", $xmlContent)))
     $insertCmd.Parameters.Add((New-Object Data.SqlClient.SqlParameter("@FileSize", $fileSize)))

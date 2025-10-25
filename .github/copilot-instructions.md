@@ -88,7 +88,3 @@
 - Always config‑driven and convention‑aligned.  
 
 ---
-
-✅ That’s the **lossless fit**: every element from both instruction blocks is preserved, but merged into one clean outline.  
-
-Would you like me to now **format this into a ready‑to‑commit replacement file** (so you can drop it straight into `.github/copilot-instructions.md`)?

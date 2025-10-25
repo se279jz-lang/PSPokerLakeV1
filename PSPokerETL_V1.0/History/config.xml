@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <HistoryDirectory>C:\Users\webmaster\source\repos\se279jz-lang\PSPokerLakeV1\PSPokerETL_V1.0\History</HistoryDirectory>
+  <RootFolderName>History</RootFolderName>
+  <DatabaseName>HistoryLake</DatabaseName>
+  <InstanceName>HistoryDB</InstanceName>
+  <ConnectionString>Server=(localdb)\HistoryDB;Database=HistoryLake;Integrated Security=True;</ConnectionString>
+  <RestoreDirectory>Restore</RestoreDirectory>
+  <historytable name="Tables" />
+  <historytable name="Tournaments" />
+</config>
