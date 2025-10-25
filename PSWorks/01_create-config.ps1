@@ -88,6 +88,9 @@ else { Write-Host "?? No HISTORY subfolders found to populate historytable entri
     Usage examples:
 •	Default: .\01_create-config.ps1
 •	Custom history dir: .\01_create-config.ps1 -HistoryDir 'C:\path\to\history'
+•	Custom history dir: .\01_create-config.ps1 -HistoryDir 'C:\Users\webmaster\Desktop\Data'
+•	Custom history dir AND config file: .\01_create-config.ps1 -HistoryDir 'C:\Users\webmaster\Desktop\Data' -ConfigFile 'C:\Users\webmaster\Desktop\PSWorks\config.xml'
 •	Relative history dir: .\01_create-config.ps1 -HistoryDir '..\OtherData'
-•	Custom config file: .\01_create-config.ps1 -ConfigFile 'myconfig.xml'
+•	Custom config file: .\01_create-config.ps1 -ConfigFile 'config.xml'
+•	Custom config file: .\01_create-config.ps1 -ConfigFile 'C:\Users\webmaster\Desktop\PSWorks\config.xml'
 #>

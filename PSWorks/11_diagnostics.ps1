@@ -1,0 +1,3 @@
+sqllocaldb info
+sqllocaldb stop psworksdb
+sqllocaldb delete psworksdb

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <config>
-  <HistoryDirectory>C:\Users\webmaster\Desktop\bundlex8\Data</HistoryDirectory>
-  <RootFolderName>bundlex8</RootFolderName>
-  <DatabaseName>bundlex8Lake</DatabaseName>
-  <InstanceName>bundlex8DB</InstanceName>
-  <ConnectionString>Server=(localdb)\bundlex8DB;Database=bundlex8Lake;Integrated Security=True;</ConnectionString>
+  <HistoryDirectory>C:\Users\webmaster\source\repos\se279jz-lang\PSPokerLakeV1\PSWorks\Data</HistoryDirectory>
+  <RootFolderName>PSWorks</RootFolderName>
+  <DatabaseName>PSWorksLake</DatabaseName>
+  <InstanceName>PSWorksDB</InstanceName>
+  <ConnectionString>Server=(localdb)\PSWorksDB;Database=PSWorksLake;Integrated Security=True;</ConnectionString>
   <RestoreDirectory>Restore</RestoreDirectory>
+  <historytable name="Foo Bar 0" />
   <historytable name="Tables" />
   <historytable name="Tournaments" />
 </config>
