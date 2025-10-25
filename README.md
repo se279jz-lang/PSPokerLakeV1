@@ -1,4 +1,4 @@
-# PokerHandHistoryETL
+# PSWorks folder scripts run sequentially placed in directory level as folder containing the xml files
 with respect to betfair poker history files
 	create a datalake compliant database 
 		promotes continuity
