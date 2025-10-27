@@ -1,3 +1,3 @@
 sqllocaldb info
-sqllocaldb stop psworksdb
-sqllocaldb delete psworksdb
+sqllocaldb stop historydb
+sqllocaldb delete historydb
