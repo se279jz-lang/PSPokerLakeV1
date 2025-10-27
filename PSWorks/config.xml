@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <config>
-  <HistoryDirectory>C:\Users\webmaster\source\repos\se279jz-lang\PSPokerLakeV1\PSWorks\Data</HistoryDirectory>
+  <HistoryDirectory>C:\PSWorks\Data</HistoryDirectory>
   <RootFolderName>PSWorks</RootFolderName>
   <DatabaseName>PSWorksLake</DatabaseName>
   <InstanceName>PSWorksDB</InstanceName>
