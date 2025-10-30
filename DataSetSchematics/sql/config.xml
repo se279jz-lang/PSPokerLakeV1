@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <HistoryDirectory>C:\Users\cnua\AppData\Local\Betfair Poker\data\cnuapkr\History\Data</HistoryDirectory>
+  <RootFolderName>History</RootFolderName>
+  <DatabaseName>HistoryLake</DatabaseName>
+  <InstanceName>HistoryDB</InstanceName>
+  <ConnectionString>Server=(localdb)\HistoryDB;Database=HistoryLake;Integrated Security=True;</ConnectionString>
+  <RestoreDirectory>Restore</RestoreDirectory>
+  <historytable name="Tables" />
+  <historytable name="Tournaments" />
+</config>

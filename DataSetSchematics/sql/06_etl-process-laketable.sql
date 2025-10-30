@@ -23,7 +23,7 @@ BEGIN
     INTO #Batch(Id, FileName, XmlContent, Sha256Hash);';
 
     -- Temp table to hold batch
-    IF OBJECT_ID(''tempdb..#Batch'') IS NOT NULL DROP TABLE #Batch;
+    IF OBJECT_ID('tempdb..#Batch') IS NOT NULL DROP TABLE #Batch;
     CREATE TABLE #Batch (
         Id INT,
         FileName NVARCHAR(260),
@@ -44,10 +44,10 @@ BEGIN
 
     WHILE @@FETCH_STATUS = 0
     BEGIN
-        DECLARE @session_code NVARCHAR(100) = @Xml.value(''(/session/@sessioncode)[1]'', ''NVARCHAR(100)'');
-        DECLARE @game_format NVARCHAR(50)   = @Xml.value(''(/session/general/gametype)[1]'', ''NVARCHAR(50)'');
-        DECLARE @start_time  DATETIME2      = @Xml.value(''(/session/general/startdate)[1]'', ''DATETIME2'');
-        DECLARE @end_time    DATETIME2      = @Xml.value(''(/session/general/enddate)[1]'', ''DATETIME2'');
+        DECLARE @session_code NVARCHAR(100) = @Xml.value('(/session/@sessioncode)[1]', 'NVARCHAR(100)');
+        DECLARE @game_format NVARCHAR(50) = @Xml.value('(/session/general/gametype)[1]', 'NVARCHAR(50)');
+        DECLARE @start_time DATETIME2 = @Xml.value('(/session/general/startdate)[1]', 'DATETIME2');
+        DECLARE @end_time DATETIME2 = @Xml.value('(/session/general/enddate)[1]', 'DATETIME2');
 
         -- Insert Session if not exists
         IF NOT EXISTS (SELECT 1 FROM dbo.Sessions WHERE session_code = @session_code)

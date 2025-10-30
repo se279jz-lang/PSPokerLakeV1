@@ -72,7 +72,7 @@ foreach ($mig in $migrations) {
         Invoke-Sqlcmd -ServerInstance $serverInstance -Database $database -Query "INSERT INTO SchemaMigrations (ScriptName) VALUES ('$script')"
         Write-Host "Applied $script"
     } catch {
-        Write-Error "Failed to apply $script: $($_.Exception.Message)"
+        Write-Error ([string]::Format("Failed to apply {0}: {1}", $script, $_.Exception.Message))
         throw
     }
 }
